@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majority - Think like the crowd. Win big.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=General+Sans:wght@700&family=Clash+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            background: radial-gradient(circle at 50% 50%, rgba(15,81,132,1) 0%, rgba(8,53,99,1) 50%, rgba(0,24,66,1) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header {
+            position: absolute;
+            top: 46px;
+            left: 46px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .logo-icon {
+            width: 52px;
+            height: 44px;
+        }
+
+        .logo-text {
+            font-family: 'Clash Display', sans-serif;
+            font-weight: 700;
+            font-size: 44px;
+            color: #fef7d2;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-link {
+            position: absolute;
+            top: 65px;
+            right: 200px;
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+            z-index: 10;
+        }
+
+        .hero-content {
+            position: absolute;
+            left: 52px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 677px;
+            z-index: 5;
+        }
+
+        .hero-title {
+            font-family: 'General Sans', sans-serif;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 1.2;
+            color: #fef7d2;
+            margin-bottom: 30px;
+        }
+
+        .hero-description {
+            font-size: 20px;
+            color: #ffffff;
+            margin-bottom: 40px;
+            max-width: 625px;
+        }
+
+        .badges {
+            display: flex;
+            gap: 17px;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            height: 48px;
+        }
+
+        .users-section {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .user-avatars {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #0b111b;
+            margin-right: -8px;
+            background: linear-gradient(135deg, #ffcb68 0%, #fdc659 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #0354a2;
+            font-size: 14px;
+        }
+
+        .users-text {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .users-text strong {
+            font-weight: 600;
+        }
+
+        .mobile-preview {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 500px;
+            z-index: 5;
+        }
+
+        .mobile-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .mobile-preview {
+                right: 20px;
+                width: 400px;
+            }
+
+            .hero-content {
+                max-width: 500px;
+            }
+
+            .hero-title {
+                font-size: 45px;
+            }
+        }
+
+                @media (max-width: 965px) {
+            .container {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+            .header {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 40px;
+            }
+
+            .hero-content {
+                position: relative;
+                left: 0;
+                top: 0;
+                transform: none;
+                text-align: center;
+                margin-bottom: 40px;
+                max-width: 600px;
+            }
+
+            .hero-title {
+                font-size: 35px;
+            }
+
+            .hero-description {
+                font-size: 18px;
+            }
+
+            .mobile-preview {
+                position: relative;
+                right: 0;
+                top: 0;
+                transform: none;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .users-section {
+                justify-content: center;
+                margin: 20px 0;
+            }
+
+            .badges {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+                        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .footer-left {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .social-link {
+            width: 24px;
+            height: 24px;
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+
+        .social-link:hover {
+            opacity: 1;
+        }
+
+        .legal-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .legal-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .legal-link:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 28px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .mobile-preview {
+                width: 250px;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .footer {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .footer-left,
+            .footer-right {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <img src="assets/logo-icon.svg" alt="Majority Logo" class="logo-icon">
+            <div class="logo-text">MAJORITY</div>
+        </header>
+
+                <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Think like the crowd.<br>Win big.</h1>
+            <p class="hero-description">
+                A fast-paced mobile game show where you win by thinking like the crowd. Predict the majority, beat the clock, and earn real rewards.
+            </p>
+
+            <div class="badges">
+                <img src="assets/app-store.svg" alt="Download on App Store" class="badge">
+                <img src="assets/google-play.svg" alt="Get it on Google Play" class="badge">
+            </div>
+
+
+        </div>
+
+        <!-- Mobile Preview -->
+        <div class="mobile-preview">
+            <img src="assets/mobile-preview.png" alt="Majority Mobile App Preview">
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <img src="assets/x.svg" alt="Follow us on X" width="24" height="24">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/discord.svg" alt="Join our Discord" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
