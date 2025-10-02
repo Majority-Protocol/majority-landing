@@ -3,15 +3,16 @@ import { CreateQuestionTypeSelector } from "../components/CreateQuestionTypeSele
 import {
   PlayQuestionTypeSelector,
 } from "../components/PlayQuestionTypeSelector";
+import { Card } from "~/components/Card";
 
-export function Welcome() {
+export function LandingPage() {
   return (
     <div className="flex flex-col gap-12 font-sans p-6">
       <section
         id="hero"
         className="h-[650px] bg-linear-223 from-sky-600 to-blue-700 text-white rounded-3xl"
       >
-        <div className="container mx-auto px-4 py-16">
+        <div className="mx-auto px-4 py-16">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="flex flex-col gap-20">
               <img src="/white-logo.svg" alt="M ajority Logo" width={219} height={45} />
@@ -24,12 +25,8 @@ export function Welcome() {
                     Where creators and fans unite for live, immersive entertainment.
                   </p>
                   <div className="flex gap-4">
-                    <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-                      Download on App Store
-                    </button>
-                    <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-                      Get it on Google Play
-                    </button>
+                    <img src="/app-store.svg" alt="Download on App Store" />
+                    <img src="/google-play.svg" alt="Get it on Google Play" />
                   </div>
                 </div>
                 <div className="lg:w-1/2">
@@ -46,7 +43,7 @@ export function Welcome() {
       </section>
 
       <section id="how-it-works-header" className="py-6">
-        <div className="container mx-auto px-4 text-center">
+        <div className="mx-auto px-4 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             How it works
           </h2>
@@ -57,7 +54,7 @@ export function Welcome() {
       </section>
 
       <section id="step-1" className="bg-linear-270 from-sky-100/20 to-sky-400/20 py-20 mx-6 rounded-3xl">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={1} />
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -106,7 +103,7 @@ export function Welcome() {
       </section>
 
       <section id="step-2" className="py-20 bg-linear-270 from-yellow-50/20 to-amber-400/20 text-sky-950 mx-6 h-[1000px] relative rounded-3xl overflow-clip">
-        <div className="container flex flex-col mx-auto px-4">
+        <div className="flex flex-col mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={2} />
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">Fans Join</h3>
@@ -122,7 +119,7 @@ export function Welcome() {
       </section>
 
       <section id="step-3" className="py-20 bg-linear-270 from-sky-100/20 to-sky-400/20 mx-6 h-[800px] relative rounded-3xl">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={3} />
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -145,7 +142,7 @@ export function Welcome() {
         id="step-4"
         className="py-20 bg-linear-270 from-yellow-50/20 to-amber-400/20 text-gray-900 mx-6 h-[800px] relative rounded-3xl"
       >
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={4} />
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -161,19 +158,36 @@ export function Welcome() {
         </div>
       </section>
 
-      <section id="download" className="py-16 bg-gray-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-8">
+      <section id="download" className="py-16 text-gray-900">
+        <div className="mx-auto px-4 text-center">
+          <h2 className="text-xl lg:text-2xl mb-8">
             DOWNLOAD THE APP
           </h2>
           <div className="flex justify-center gap-4">
-            <button className="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-              Download on App Store
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-colors">
-              Get it on Google Play
-            </button>
+            <img src="/app-store.svg" alt="Download on App Store" />
+            <img src="/google-play.svg" alt="Get it on Google Play" />
           </div>
+        </div>
+      </section>
+
+      <section id="level-up" className="py-20 mx-6 h-[800px] relative rounded-3xl">
+        <div className="mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Level‑Up Your Live Show
+            </h3>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Fast‑paced challenges keep viewers engaged.
+            </p>
+          </div>
+            <div className="flex flex-wrap justify-center gap-8">
+              <Card title="Reward fans" description="Audience‑funded prizes turn excitement into loyalty—more participants, bigger rewards." image="/reward-fans.png" />
+              <Card title="Crowdsource opinions" description="Surface what your audience really thinks." image="/crowdsource-opinions.png" />
+              <Card title="Earn beyond trading fees" description="Game entry fees give creators fan‑paid revenue." image="/earn-beyond.png" />
+              <Card title="Higher discoverability" description="Interactive streams stand out in feeds." image="/higher-discoverability.png" />
+              <Card title="Stronger community" description="Shared games and prizes build belonging." image="/stronger-community.png" />
+              <Card title="Referral earnings" description="Fans earn a percentage of each ticket bought by people they refer, giving creators a built‑in audience‑growth incentive." image="/referral-earnings.png" />
+            </div>
         </div>
       </section>
     </div>

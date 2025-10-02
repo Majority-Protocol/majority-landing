@@ -39,7 +39,7 @@ export const PlayQuestionTypeSelector = () => {
               type="button"
               onClick={() => handleItemClick(item)}
               className={`
-                    flex w-[295px] z-10 text-[#001842] text-xl font-normal p-4 cursor-pointer transition-colors ${
+                    flex w-[295px] z-10 text-[#001842] text-xl font-normal p-4.5 rounded-md cursor-pointer transition-colors ${
                       selectedItem === item
                         ? "text-white"
                         : "bg-white"
