@@ -7,16 +7,16 @@ import { Card } from "~/components/Card";
 
 export function LandingPage() {
   return (
-    <div className="flex flex-col gap-12 font-sans p-6">
+    <div className="flex flex-col gap-12 font-sans md:p-6">
       <section
         id="hero"
-        className="h-[650px] bg-linear-223 from-sky-600 to-blue-700 text-white rounded-3xl"
+        className="bg-linear-223 from-sky-600 to-blue-700 text-white md:rounded-3xl"
       >
-        <div className="mx-auto px-4 py-16">
+        <div className="mx-auto px-4 pt-16">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="flex flex-col gap-20">
               <img src="/white-logo.svg" alt="M ajority Logo" width={219} height={45} />
-              <div className="flex flex-row">
+              <div className="flex flex-col items-center md:items-start text-center md:text-left gap-8 md:flex-row">
                 <div className="lg:mb-0">
                   <h1 className="text-4xl lg:text-6xl font-bold mb-6">
                     Create interactive, rewarding shows
@@ -24,18 +24,12 @@ export function LandingPage() {
                   <p className="text-xl mb-8 text-blue-100">
                     Where creators and fans unite for live, immersive entertainment.
                   </p>
-                  <div className="flex gap-4">
+                  <div className="flex justify-center md:justify-start gap-4">
                     <img src="/app-store.svg" alt="Download on App Store" />
                     <img src="/google-play.svg" alt="Get it on Google Play" />
                   </div>
                 </div>
-                <div className="lg:w-1/2">
-                  <div className="relative">
-                      <div className="w-80 h-96 mx-auto">
-                      <img src="/mobile-games.png" alt="Mobile Games" />
-                    </div>
-                  </div>
-                </div>
+                <img src="/mobile-games.png" className="w-80" alt="Mobile Games" />
               </div>
             </div>
           </div>
