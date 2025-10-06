@@ -47,7 +47,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="step-1" className="bg-linear-270 from-sky-100/20 to-sky-400/20 py-20 mx-6 rounded-3xl">
+      <section id="step-1" className="bg-linear-360 from-sky-100/20 to-sky-400/20 py-6 md:py-9 mx-6 rounded-3xl">
         <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={1} />
@@ -96,7 +96,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="step-2" className="py-20 bg-linear-270 from-yellow-50/20 to-amber-400/20 text-sky-950 mx-6 h-[1000px] relative rounded-3xl overflow-clip">
+      <section id="step-2" className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-sky-950 mx-6 h-[1000px] relative rounded-3xl overflow-clip">
         <div className="flex flex-col mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={2} />
@@ -112,7 +112,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="step-3" className="py-20 bg-linear-270 from-sky-100/20 to-sky-400/20 mx-6 h-[800px] relative rounded-3xl">
+      <section id="step-3" className="py-6 md:py-9 bg-linear-360 from-sky-100/20 to-sky-400/20 mx-6 h-[800px] relative rounded-3xl">
         <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={3} />
@@ -134,9 +134,9 @@ export function LandingPage() {
 
       <section
         id="step-4"
-        className="py-20 bg-linear-270 from-yellow-50/20 to-amber-400/20 text-gray-900 mx-6 h-[800px] relative rounded-3xl"
+        className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-gray-900 mx-6 h-[800px] relative rounded-3xl"
       >
-        <div className="mx-auto px-4">
+        <div className="mx-auto px-4 flex flex-col items-center">
           <div className="text-center mb-12">
             <StepPill step={4} />
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -147,12 +147,11 @@ export function LandingPage() {
               scores—play smarter to win cash prizes!
             </p>
           </div>
-
-          <img src="/mobile-area-3.png" alt="Mobile Games" className="max-h-128 absolute bottom-0 left-[50%] translate-x-[-50%]" />
+          <img src="/mobile-area-3.png" className="w-80" alt="You won!" />
         </div>
       </section>
 
-      <section id="download" className="py-16 text-gray-900">
+      <section id="download" className="text-gray-900">
         <div className="mx-auto px-4 text-center">
           <h2 className="text-xl lg:text-2xl mb-8">
             DOWNLOAD THE APP
@@ -164,7 +163,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="level-up" className="py-20 mx-6 h-[800px] relative rounded-3xl">
+      <section id="level-up" className="py-6 md:py-9 mx-6 h-[800px] relative rounded-3xl">
         <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
