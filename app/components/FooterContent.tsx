@@ -3,12 +3,12 @@ export const FooterContent = () => {
     <div className="text-white">
       <div className="flex justify-between gap-8 py-6 px-8 md:py-12 md:px-16">
         <img src="/white-logo.svg" alt="Majority" className="h-6 md:h-12 w-auto" />
-        <div className="flex flex-row gap-16 text-sm">
+        <div className="flex flex-col md:flex-row gap-16 text-sm">
           <div className="space-y-3">
             <div className="uppercase tracking-wide text-white/80">Socials</div>
             <ul className="space-y-2">
               <li>
-                <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:underline">X</a>
+                <a href="https://x.com/Majority_Fun" target="_blank" rel="noreferrer" className="hover:underline">X</a>
               </li>
               <li>
                 <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="hover:underline">TikTok</a>
@@ -19,7 +19,7 @@ export const FooterContent = () => {
             <div className="uppercase tracking-wide text-white/80">Create</div>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:underline">GitHub</a>
+                <a href="https://github.com/Majority-Protocol" target="_blank" rel="noreferrer" className="hover:underline">GitHub</a>
               </li>
               <li>
                 <a href="/docs" className="hover:underline">Docs</a>

@@ -37,7 +37,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <main>
           {children}
         </main>
-        <footer className="w-full h-[240px] bg-gradient-to-b from-sky-600 to-sky-950"><FooterContent /></footer>
+        <footer className="w-full bg-gradient-to-b from-sky-600 to-sky-950"><FooterContent /></footer>
         <ScrollRestoration />
         <Scripts />
       </body>
