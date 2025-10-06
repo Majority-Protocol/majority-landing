@@ -134,7 +134,7 @@ export function LandingPage() {
 
       <section
         id="step-4"
-        className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-gray-900 mx-6 h-[800px] relative rounded-3xl"
+        className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-gray-900 mx-6 h-[800px] rounded-3xl"
       >
         <div className="mx-auto px-4 flex flex-col items-center">
           <div className="text-center mb-12">
@@ -163,7 +163,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="level-up" className="py-6 md:py-9 mx-6 h-[800px] relative rounded-3xl">
+      <section id="level-up" className="py-6 md:py-9 mx-6 rounded-3xl">
         <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
