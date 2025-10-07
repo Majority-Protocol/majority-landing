@@ -1,8 +1,5 @@
 import { StepPill } from "~/components/StepPill";
 import { CreateQuestionTypeSelector } from "../components/CreateQuestionTypeSelector";
-import {
-  PlayQuestionTypeSelector,
-} from "../components/PlayQuestionTypeSelector";
 import { Card } from "~/components/Card";
 
 export function LandingPage() {
@@ -60,7 +57,7 @@ export function LandingPage() {
             </p>
           </div>
           <CreateQuestionTypeSelector selectorType="creator" />
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 my-12">
             <div className="flex items-center gap-4">
               <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
                 1
@@ -112,7 +109,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="step-3" className="py-6 md:py-9 bg-linear-360 from-sky-100/20 to-sky-400/20 mx-6 h-[800px] relative rounded-3xl">
+      <section id="step-3" className="bg-linear-360 from-sky-100/20 to-sky-400/20 pt-6 md:pt-9 mx-6 rounded-3xl">
         <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={3} />
@@ -125,10 +122,7 @@ export function LandingPage() {
               unexpected winner.
             </p>
           </div>
-          <div className="flex flex-row absolute bottom-0 left-[50%] translate-x-[-50%] justify-center items-center gap-8">
-            <PlayQuestionTypeSelector />
-            <img src="/mobile-area-2.png" alt="Mobile Games" className="max-h-128" />
-          </div>
+          <CreateQuestionTypeSelector selectorType="player" />
         </div>
       </section>
 

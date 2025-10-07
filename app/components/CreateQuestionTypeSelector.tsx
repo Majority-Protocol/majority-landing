@@ -5,23 +5,23 @@ import { useState } from "react";
 const SelectorData = {
   "Majority": {
     createImage: "/questions/majority.png",
-    playImage: "/questions/majority.png",
+    playImage: "/questions/play-majority.png",
   },
   "Popular": {
     createImage: "/questions/popular.png",
-    playImage: "/questions/popular.png",
+    playImage: "/questions/play-popular.png",
   },
   "Prediction": {
     createImage: "/questions/prediction.png",
-    playImage: "/questions/prediction.png",
+    playImage: "/questions/play-prediction.png",
   },
   "Opinion": {
     createImage: "/questions/opinion.png",
-    playImage: "/questions/opinion.png",
+    playImage: "/questions/play-opinion.png",
   },
   "Trivia": {
     createImage: "/questions/trivia.png",
-    playImage: "/questions/trivia.png",
+    playImage: "/questions/play-trivia.png",
   },
 } as const;
 
@@ -48,7 +48,7 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
           </button>
         ))}
       </div>
-      <div className="max-w-sm mx-auto py-10">
+      <div className="max-w-sm mx-auto pt-10">
         <img
           src={selectorType === "creator"
             ? SelectorData[selectedItem as keyof typeof SelectorData].createImage
