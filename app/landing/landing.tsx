@@ -7,7 +7,7 @@ export function LandingPage() {
     <div className="flex flex-col gap-12 font-sans md:p-6">
       <section
         id="hero"
-        className="bg-linear-223 from-sky-600 to-blue-700 text-white md:rounded-3xl"
+        className="bg-linear-223 from-sky-600 to-blue-700 text-white md:rounded-3xl md:px-20"
       >
         <div className="mx-auto px-4 pt-16">
           <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -44,7 +44,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="step-1" className="bg-linear-360 from-sky-100/20 to-sky-400/20 py-6 md:py-9 mx-6 rounded-3xl">
+      <section id="step-1" className="bg-linear-360 from-sky-100/20 to-sky-400/20 py-6 md:py-9 mx-6 md:px-10 rounded-3xl">
         <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={1} />
@@ -93,7 +93,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="step-2" className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-sky-950 mx-6 h-[1000px] relative rounded-3xl overflow-clip">
+      <section id="step-2" className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-sky-950 mx-6 h-[1000px] relative rounded-3xl md:px-10 overflow-clip">
         <div className="flex flex-col mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={2} />
@@ -109,7 +109,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="step-3" className="bg-linear-360 from-sky-100/20 to-sky-400/20 pt-6 md:pt-9 mx-6 rounded-3xl">
+      <section id="step-3" className="bg-linear-360 from-sky-100/20 to-sky-400/20 pt-6 md:pt-9 mx-6 rounded-3xl md:px-10">
         <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <StepPill step={3} />
@@ -128,7 +128,7 @@ export function LandingPage() {
 
       <section
         id="step-4"
-        className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-gray-900 mx-6 h-[800px] rounded-3xl"
+        className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-gray-900 mx-6 h-[800px] rounded-3xl md:px-10"
       >
         <div className="mx-auto px-4 flex flex-col items-center">
           <div className="text-center mb-12">
@@ -157,7 +157,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section id="level-up" className="py-6 md:py-9 mx-6 rounded-3xl">
+      <section id="level-up" className="py-6 md:py-9 mx-6 rounded-3xl md:px-10">
         <div className="mx-auto px-4">
           <div className="text-center mb-12">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
