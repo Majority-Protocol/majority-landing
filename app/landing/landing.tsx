@@ -26,7 +26,7 @@ export function LandingPage() {
                     <img src="/google-play.svg" alt="Get it on Google Play" />
                   </div>
                 </div>
-                <img src="/mobile-games.png" className="w-80" alt="Mobile Games" />
+                <img src="/mobile-games.png" className="w-80 md:pr-4" alt="Mobile Games" />
               </div>
             </div>
           </div>
@@ -168,12 +168,30 @@ export function LandingPage() {
             </p>
           </div>
             <div className="flex flex-wrap justify-center gap-8">
-              <Card title="Reward fans" description="Audience‑funded prizes turn excitement into loyalty—more participants, bigger rewards." image="/reward-fans.png" />
-              <Card title="Crowdsource opinions" description="Surface what your audience really thinks." image="/crowdsource-opinions.png" />
-              <Card title="Earn beyond trading fees" description="Game entry fees give creators fan‑paid revenue." image="/earn-beyond.png" />
-              <Card title="Higher discoverability" description="Interactive streams stand out in feeds." image="/higher-discoverability.png" />
-              <Card title="Stronger community" description="Shared games and prizes build belonging." image="/stronger-community.png" />
-              <Card title="Referral earnings" description="Fans earn a percentage of each ticket bought by people they refer, giving creators a built‑in audience‑growth incentive." image="/referral-earnings.png" />
+              <Card
+                title="Reward fans" description="Audience‑funded prizes turn excitement into loyalty—more participants, bigger rewards."
+                image="/cards/reward-fans.png"
+              />
+              <Card
+                title="Crowdsource opinions" description="Surface what your audience really thinks."
+                image="/cards/crowdsource-opinions.png"
+              />
+              <Card
+                title="Earn beyond trading fees" description="Game entry fees give creators fan‑paid revenue."
+                image="/cards/earn-beyond.png"
+              />
+              <Card
+                title="Higher discoverability" description="Interactive streams stand out in feeds."
+                image="/cards/higher-discoverability.png"
+              />
+              <Card
+                title="Stronger community" description="Shared games and prizes build belonging."
+                image="/cards/stronger-community.png"
+              />
+              <Card
+                title="Referral earnings" description="Fans earn a percentage of each ticket bought by people they refer, giving creators a built‑in audience‑growth incentive."
+                image="/cards/referral-earnings.png"
+              />
             </div>
         </div>
       </section>
