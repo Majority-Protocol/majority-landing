@@ -21,3 +21,27 @@ body {
     color-scheme: dark;
   }
 }
+
+/* Reveal on scroll: subtle fade + translateY */
+/* Start state */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  will-change: opacity, transform;
+  transition: opacity 1500ms cubic-bezier(.2,.7,.2,1),
+              transform 1500ms cubic-bezier(.2,.7,.2,1);
+}
+
+/* End state */
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion: no transform, near-instant opacity */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    transform: none;
+    transition: opacity 1ms linear;
+  }
+}
