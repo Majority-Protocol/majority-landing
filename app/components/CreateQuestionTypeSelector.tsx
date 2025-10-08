@@ -41,7 +41,7 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
             key={item}
             onClick={() => handleItemClick(item)}
             className={`px-1.5 lg:px-12 py-1.5 lg:py-4 cursor-pointer rounded-full text-xs lg:text-base transition-colors ${
-              selectedItem === item ? "bg-[#011A44] text-white" : "bg-white"
+              selectedItem === item ? "bg-[#011A44] text-white" : "bg-white hover:bg-sky-950/5"
             }`}
           >
             {item}

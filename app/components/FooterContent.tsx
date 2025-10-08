@@ -8,10 +8,14 @@ export const FooterContent = () => {
             <div className="uppercase tracking-wide text-white/80">Socials</div>
             <ul className="space-y-2">
               <li>
-                <a href="https://x.com/Majority_Fun" target="_blank" rel="noreferrer" className="hover:underline">X</a>
+                <a href="https://x.com/Majority_Fun" target="_blank" rel="noreferrer" className="hover:underline">
+                  <img src="/logos/logo-x.svg" alt="X" className="h-4 w-4" />
+                </a>
               </li>
               <li>
-                <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="hover:underline">TikTok</a>
+                <a href="https://discord.gg/PuCH8sDj8j" target="_blank" rel="noreferrer" className="hover:underline">
+                  <img src="/logos/logo-discord.svg" alt="Discord" className="h-4 w-4" />
+                </a>
               </li>
             </ul>
           </div>
@@ -19,13 +23,13 @@ export const FooterContent = () => {
             <div className="uppercase tracking-wide text-white/80">Create</div>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com/Majority-Protocol" target="_blank" rel="noreferrer" className="hover:underline">GitHub</a>
-              </li>
-              <li>
                 <a href="/docs" className="hover:underline">Docs</a>
               </li>
               <li>
                 <a href="/media-kit" className="hover:underline">Media Kit</a>
+              </li>
+              <li>
+                <a href="https://github.com/Majority-Protocol" target="_blank" rel="noreferrer" className="hover:underline">GitHub</a>
               </li>
             </ul>
           </div>

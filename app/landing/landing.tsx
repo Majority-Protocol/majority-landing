@@ -87,7 +87,7 @@ export function LandingPage() {
                   "linear-gradient(278deg, #1381D1 4.81%, #095AC2 96.79%), #011A44",
               }}
             >
-              Create your own quiz
+              Join the waiting list
             </button>
           </div>
         </div>
