@@ -26,7 +26,7 @@ export const FooterContent = () => {
                 <a href="/docs" className="hover:underline">Docs</a>
               </li>
               <li>
-                <a href="/media-kit" className="hover:underline">Media Kit</a>
+                <a href="/logos.zip" className="hover:underline">Media Kit</a>
               </li>
               <li>
                 <a href="https://github.com/Majority-Protocol" target="_blank" rel="noreferrer" className="hover:underline">GitHub</a>
