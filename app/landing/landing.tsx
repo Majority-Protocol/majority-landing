@@ -21,6 +21,7 @@ export function LandingPage() {
                   <p className="text-xl mb-8 text-blue-100">
                     Where creators and fans unite for live, immersive entertainment.
                   </p>
+                  <p className="text-l text-blue-100 pb-4">Soon in app stores</p>
                   <div className="flex justify-center md:justify-start gap-4">
                     <img src="/app-store.svg" alt="Download on App Store" />
                     <img src="/google-play.svg" alt="Get it on Google Play" />

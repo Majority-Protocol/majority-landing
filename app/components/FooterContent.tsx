@@ -37,10 +37,10 @@ export const FooterContent = () => {
             <div className="uppercase tracking-wide text-white/80">Play</div>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:underline">Download for iOS</a>
+                <span className="text-white/50 cursor-not-allowed">Download for iOS</span>
               </li>
               <li>
-                <a href="/docs" className="hover:underline">Download for Android</a>
+                <span className="text-white/50 cursor-not-allowed">Download for Android</span>
               </li>
             </ul>
           </div>
