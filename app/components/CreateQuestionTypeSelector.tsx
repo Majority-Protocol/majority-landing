@@ -27,16 +27,29 @@ const SelectorData = {
 
 export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creator" | "player" }) => {
   const [selectedItem, setSelectedItem] = useState("Popular");
+  const [displayedItem, setDisplayedItem] = useState("Popular");
+  const [isVisible, setIsVisible] = useState(true);
 
   const handleItemClick = (item: string) => {
+    if (item === selectedItem) return;
     setSelectedItem(item);
+    setIsVisible(false);
   };
 
   // Precompute current src and background preloads
   const currentSrc = useMemo(() => {
-    const data = SelectorData[selectedItem as keyof typeof SelectorData];
+    const data = SelectorData[displayedItem as keyof typeof SelectorData];
     return selectorType === "creator" ? data.createImage : data.playImage;
-  }, [selectedItem, selectorType]);
+  }, [displayedItem, selectorType]);
+
+  // When the selected item changes, swap the displayed image after fade-out
+  useEffect(() => {
+    if (displayedItem === selectedItem) return;
+    const timeout = setTimeout(() => {
+      setDisplayedItem(selectedItem);
+    }, 300); // match transition duration
+    return () => clearTimeout(timeout);
+  }, [selectedItem, displayedItem]);
 
   // Warm the cache for all candidate images in the background after mount
   useEffect(() => {
@@ -78,10 +91,12 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
       <div className="max-w-sm mx-auto pt-10">
         <img
           src={currentSrc}
-          alt={selectedItem}
+          alt={displayedItem}
           decoding="async"
           loading="eager"
           fetchPriority="high"
+          onLoad={() => setIsVisible(true)}
+          className={`filter transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${isVisible ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-95 blur-[2px]"}`}
         />
       </div>
     </>

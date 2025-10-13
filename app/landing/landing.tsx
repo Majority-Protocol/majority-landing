@@ -21,7 +21,7 @@ export function LandingPage() {
                   <p className="text-xl mb-8 text-blue-100">
                     Where creators and fans unite for live, immersive entertainment.
                   </p>
-                  <p className="text-l text-blue-100 pb-4">Soon in app stores</p>
+                  <p className="text-l text-blue-100 pb-4">Coming soon</p>
                   <div className="flex justify-center md:justify-start gap-4">
                     <img src="/app-store.svg" alt="Download on App Store" />
                     <img src="/google-play.svg" alt="Get it on Google Play" />
@@ -53,34 +53,39 @@ export function LandingPage() {
               Create
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Create a Game on Majority for your livestream. Build games around
+              Create a game on Majority for your livestream. Build games around
               different interactive question formats.
             </p>
           </div>
           <CreateQuestionTypeSelector selectorType="creator" />
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 my-12">
-            <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
-                1
+          <div className="flex justify-center">
+            <div className="flex flex-col md:flex-row md:items-center gap-8 my-12">
+              <div className="flex items-center gap-4">
+                <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
+                  1
+                </div>
+                <span className="text-lg text-sky-950">Configure Questions</span>
               </div>
-              <span className="text-lg text-sky-950">Configure Questions</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
-                2
+              <div className="flex items-center gap-4">
+                <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
+                  2
+                </div>
+                <span className="text-lg text-sky-950">Set the Stakes</span>
               </div>
-              <span className="text-lg text-sky-950">Set the Stakes</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
-                3
+              <div className="flex items-center gap-4">
+                <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
+                  3
+                </div>
+                <span className="text-lg text-sky-950">Engage & Reward</span>
               </div>
-              <span className="text-lg text-sky-950">Engage & Reward</span>
             </div>
           </div>
 
           <div className="text-center">
-            <button
+            <a
+              href="https://discord.gg/PuCH8sDj8j"
+              target="_blank"
+              rel="noreferrer"
               type="button"
               className="bg-[linear-gradient(278deg,#1381D1_4.81%,#095AC2_96.79%)] text-white px-12 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity"
               style={{
@@ -89,7 +94,7 @@ export function LandingPage() {
               }}
             >
               Join the waiting list
-            </button>
+            </a>
           </div>
         </div>
       </section>
