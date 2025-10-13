@@ -23,6 +23,9 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
+  // Preload the most likely first-visible images from CreateQuestionTypeSelector
+  { rel: "preload", as: "image", href: "/questions/popular.png" },
+  { rel: "preload", as: "image", href: "/questions/play-popular.png" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {

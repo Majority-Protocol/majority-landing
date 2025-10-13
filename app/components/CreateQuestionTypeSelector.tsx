@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const SelectorData = {
   "Majority": {
@@ -32,6 +32,33 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
     setSelectedItem(item);
   };
 
+  // Precompute current src and background preloads
+  const currentSrc = useMemo(() => {
+    const data = SelectorData[selectedItem as keyof typeof SelectorData];
+    return selectorType === "creator" ? data.createImage : data.playImage;
+  }, [selectedItem, selectorType]);
+
+  // Warm the cache for all candidate images in the background after mount
+  useEffect(() => {
+    const urls = Object.values(SelectorData).map((d) =>
+      selectorType === "creator" ? d.createImage : d.playImage
+    );
+    const unique = Array.from(new Set(urls));
+    const preloaders = unique
+      .filter((u) => typeof u === "string")
+      .map((u) => {
+        const img = new Image();
+        img.decoding = "async";
+        img.loading = "eager";
+        img.src = u as string;
+        return img;
+      });
+    return () => {
+      // no cleanup needed; allow GC
+      void preloaders;
+    };
+  }, [selectorType]);
+
   return (
     <>
       <div className="bg-white rounded-full flex justify-evenly p-3 text-sky-950 shadow-[inset_0_4px_6px_0_rgba(1,26,68,0.08)]">
@@ -50,10 +77,11 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
       </div>
       <div className="max-w-sm mx-auto pt-10">
         <img
-          src={selectorType === "creator"
-            ? SelectorData[selectedItem as keyof typeof SelectorData].createImage
-            : SelectorData[selectedItem as keyof typeof SelectorData].playImage}
+          src={currentSrc}
           alt={selectedItem}
+          decoding="async"
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
     </>
