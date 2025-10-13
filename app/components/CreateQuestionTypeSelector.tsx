@@ -2,7 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-const SelectorData = {
+type QuestionType = "Majority" | "Popular" | "Prediction" | "Opinion" | "Trivia";
+
+const SelectorData: Record<QuestionType, { createImage: string; playImage: string }> = {
   "Majority": {
     createImage: "/questions/majority.png",
     playImage: "/questions/play-majority.png",
@@ -26,11 +28,11 @@ const SelectorData = {
 } as const;
 
 export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creator" | "player" }) => {
-  const [selectedItem, setSelectedItem] = useState("Popular");
-  const [displayedItem, setDisplayedItem] = useState("Popular");
+  const [selectedItem, setSelectedItem] = useState<QuestionType>("Majority");
+  const [displayedItem, setDisplayedItem] = useState<QuestionType>("Majority");
   const [isVisible, setIsVisible] = useState(true);
 
-  const handleItemClick = (item: string) => {
+  const handleItemClick = (item: QuestionType) => {
     if (item === selectedItem) return;
     setSelectedItem(item);
     setIsVisible(false);
@@ -75,11 +77,11 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
   return (
     <>
       <div className="bg-white rounded-full flex justify-evenly p-3 text-sky-950 shadow-[inset_0_4px_6px_0_rgba(1,26,68,0.08)]">
-        {Object.entries(SelectorData).map(([item, data]) => (
+        {Object.entries(SelectorData).map(([item,]) => (
           <button
             type="button"
             key={item}
-            onClick={() => handleItemClick(item)}
+            onClick={() => handleItemClick(item as QuestionType)}
             className={`px-1.5 lg:px-12 py-1.5 lg:py-4 cursor-pointer rounded-full text-xs lg:text-base transition-colors ${
               selectedItem === item ? "bg-[#011A44] text-white" : "bg-white hover:bg-sky-950/5"
             }`}
