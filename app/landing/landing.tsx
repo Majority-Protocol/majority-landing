@@ -16,7 +16,7 @@ export function LandingPage() {
               <div className="flex flex-col items-center md:items-start text-center md:text-left gap-8 md:flex-row">
                 <div className="lg:mb-0">
                   <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-                    Create interactive, rewarding shows
+                    Create shows with cash jackpots
                   </h1>
                   <p className="text-xl mb-8 text-blue-100">
                     Where creators and fans unite for live, immersive entertainment.
@@ -123,9 +123,7 @@ export function LandingPage() {
               Play
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Fans answer questions prompted by creators. Earn points for
-              getting the right answer, matching the crowd, or picking the
-              unexpected winner.
+              Fans compete to answer questions prompted by creators. Earn points for getting the right answer, matching the crowd, or picking the unexpected winner.
             </p>
           </div>
           <CreateQuestionTypeSelector selectorType="player" />
