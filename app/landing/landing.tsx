@@ -105,9 +105,7 @@ export function LandingPage() {
             <StepPill step={2} />
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">Fans Join</h3>
             <p className="text-xl max-w-3xl mx-auto">
-              Fans can join your game by paying an entry fee — all fees go
-              straight into a communal prize pool (or play for free when the
-              creator enables a no-fee round).
+              Fans pay an entry fee: a portion builds the prize pool, the rest supports creators and protocol. Enable free rounds for wider play.
             </p>
           </div>
           <img src="/fireworks.png" alt="SP Question" className="absolute bottom-0 max-w-4xl left-[50%] translate-x-[-50%]" />
