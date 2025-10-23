@@ -38,7 +38,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="min-h-screen flex flex-col">
-        <main>
+        <main className="flex-1">
           {children}
         </main>
         <footer className="w-full bg-gradient-to-b from-sky-600 to-sky-950"><FooterContent /></footer>
