@@ -15,7 +15,7 @@ export function LandingPage() {
               <img src="/white-logo.svg" alt="M ajority Logo" width={219} height={45} />
               <div className="flex flex-col items-center md:items-start text-center md:text-left gap-8 md:flex-row">
                 <div className="lg:mb-0">
-                  <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+                  <h1 className="text-4xl lg:text-6xl font-semibold mb-6">
                     Create shows with cash jackpots
                   </h1>
                   <p className="text-xl mb-8 text-blue-100">
