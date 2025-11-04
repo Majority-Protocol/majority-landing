@@ -4,7 +4,7 @@ import { Card } from "~/components/Card";
 
 export function LandingPage() {
   return (
-    <div className="flex flex-col gap-12 font-sans md:p-6">
+    <div className="flex flex-col gap-12 font-sans md:p-6 max-w-7xl mx-auto">
       <section
         id="hero"
         className="bg-linear-223 from-sky-600 to-blue-700 text-white md:rounded-3xl md:px-20"
