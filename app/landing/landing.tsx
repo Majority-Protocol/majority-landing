@@ -46,8 +46,8 @@ export function LandingPage() {
       </section>
 
       <section id="step-1" className="opacity-0 bg-linear-360 from-sky-100/20 to-sky-400/20 py-6 md:py-9 mx-6 md:px-10 rounded-3xl">
-        <div className="mx-auto px-4">
-          <div className="text-center mb-12">
+        <div className="mx-auto px-4 space-y-12">
+          <div className="text-center">
             <StepPill step={1} />
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Create
@@ -57,36 +57,13 @@ export function LandingPage() {
             </p>
           </div>
           <CreateQuestionTypeSelector selectorType="creator" />
-          <div className="flex justify-center">
-            <div className="flex flex-col md:flex-row md:items-center gap-8 my-12">
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
-                  1
-                </div>
-                <span className="text-lg text-sky-950">Configure Questions</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
-                  2
-                </div>
-                <span className="text-lg text-sky-950">Set the Stakes</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 bg-sky-950 text-white rounded-full flex items-center justify-center font-semibold">
-                  3
-                </div>
-                <span className="text-lg text-sky-950">Engage & Reward</span>
-              </div>
-            </div>
-          </div>
-
           <div className="text-center">
             <a
               href="https://discord.gg/PuCH8sDj8j"
               target="_blank"
               rel="noreferrer"
               type="button"
-              className="bg-[linear-gradient(278deg,#1381D1_4.81%,#095AC2_96.79%)] text-white px-12 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity"
+              className="inline-block bg-[linear-gradient(278deg,#1381D1_4.81%,#095AC2_96.79%)] text-white px-12 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity"
               style={{
                 background:
                   "linear-gradient(278deg, #1381D1 4.81%, #095AC2 96.79%), #011A44",

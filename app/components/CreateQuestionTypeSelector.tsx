@@ -4,26 +4,29 @@ import { useEffect, useMemo, useState } from "react";
 
 type QuestionType = "Majority" | "Popular" | "Prediction" | "Opinion" | "Trivia";
 
-const SelectorData: Record<QuestionType, { createImage: string; playImage: string }> = {
+const SelectorData = {
   "Majority": {
     createImage: "/questions/majority.png",
     playImage: "/questions/play-majority.png",
+    description: "Pick the answer you think most players will choose.",
   },
   "Popular": {
     createImage: "/questions/popular.png",
     playImage: "/questions/play-popular.png",
+    description: "Choose your answer and guess how many others picked the same.",
   },
-  "Prediction": {
-    createImage: "/questions/prediction.png",
-    playImage: "/questions/play-prediction.png",
-  },
-  "Opinion": {
-    createImage: "/questions/opinion.png",
-    playImage: "/questions/play-opinion.png",
-  },
+  // "Prediction": {
+  //   createImage: "/questions/prediction.png",
+  //   playImage: "/questions/play-prediction.png",
+  // },
+  // "Opinion": {
+  //   createImage: "/questions/opinion.png",
+  //   playImage: "/questions/play-opinion.png",
+  // },
   "Trivia": {
     createImage: "/questions/trivia.png",
     playImage: "/questions/play-trivia.png",
+    description: "Select the correct answer to a trivia question.",
   },
 } as const;
 
@@ -75,7 +78,7 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
   }, [selectorType]);
 
   return (
-    <>
+    <div className="space-y-10">
       <div className="bg-white rounded-full flex justify-evenly p-3 text-sky-950 shadow-[inset_0_4px_6px_0_rgba(1,26,68,0.08)]">
         {Object.entries(SelectorData).map(([item,]) => (
           <button
@@ -90,7 +93,7 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
           </button>
         ))}
       </div>
-      <div className="max-w-sm mx-auto pt-10">
+      <div className="max-w-sm mx-auto">
         <img
           src={currentSrc}
           alt={displayedItem}
@@ -101,6 +104,11 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
           className={`filter transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${isVisible ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-95 blur-[2px]"}`}
         />
       </div>
-    </>
+      {selectorType === "creator" ? (
+        <p className="text-lg text-sky-950 text-center">
+          {SelectorData[displayedItem as keyof typeof SelectorData].description}
+        </p>
+      ) : null}
+    </div>
   );
 };
