@@ -16,10 +16,10 @@ export function LandingPage() {
               <div className="flex flex-col items-center md:items-start text-center md:text-left gap-8 md:flex-row">
                 <div className="lg:mb-0">
                   <h1 className="text-4xl lg:text-6xl font-semibold mb-6">
-                    Create shows with cash jackpots
+                    Engage and reward your audience
                   </h1>
                   <p className="text-xl mb-8 text-blue-100">
-                    Where creators and fans unite for live, immersive entertainment.
+                    Crowdsource and distribute prizes in shows without intermediaries
                   </p>
                   <p className="text-l text-blue-100 pb-4">Coming soon</p>
                   <div className="flex justify-center md:justify-start gap-4">
@@ -53,8 +53,7 @@ export function LandingPage() {
               Create
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Create a game on Majority for your livestream. Build games around
-              different interactive question formats.
+              <strong>Create a competition</strong> - Pick configurable question types to spark fun, competitive interaction.
             </p>
           </div>
           <CreateQuestionTypeSelector selectorType="creator" />
@@ -105,7 +104,7 @@ export function LandingPage() {
             <StepPill step={2} />
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">Fans Join</h3>
             <p className="text-xl max-w-3xl mx-auto">
-              Fans pay an entry fee: part of it builds the prize pool, and another part supports the creator. Enable free rounds for wider play.
+              <strong>Set the rules</strong> - Define entry requirements and prize details for fans.
             </p>
           </div>
           <img src="/fireworks.png" alt="SP Question" className="absolute bottom-0 max-w-4xl left-[50%] translate-x-[-50%]" />
@@ -121,7 +120,7 @@ export function LandingPage() {
               Play
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Fans compete to answer questions prompted by creators. Earn points for getting the right answer, matching the crowd, or picking the unexpected winner.
+              <strong>Fans compete</strong> - Winners and creators are paid transparently with no intermediaries
             </p>
           </div>
           <CreateQuestionTypeSelector selectorType="player" />
