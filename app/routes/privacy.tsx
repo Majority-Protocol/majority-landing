@@ -7,14 +7,19 @@ export default function PrivacyPolicyPage() {
       </p>
 
       <p className="mb-6">
-        This Privacy Policy explains how <strong>Question Labs</strong> ("we," "our," or "us") collects, uses, and protects
-        your information when you use our mobile application (the “App”).
+        This Privacy Policy explains how <strong>Question Labs</strong> ("we,"
+        "our," or "us") collects, uses, and protects your information when you
+        use our mobile application (the “App”).
       </p>
 
       {/* Section 1 */}
-      <h2 className="text-2xl font-semibold mt-8 mb-3">1. Information We Collect</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-3">
+        1. Information We Collect
+      </h2>
 
-      <h3 className="text-xl font-semibold mt-4 mb-2">a. Information You Provide</h3>
+      <h3 className="text-xl font-semibold mt-4 mb-2">
+        a. Information You Provide
+      </h3>
       <ul className="list-disc pl-6 mb-4 space-y-1">
         <li>
           <strong>Wallet Creation and Authentication:</strong> When you log in
@@ -30,11 +35,20 @@ export default function PrivacyPolicyPage() {
         </li>
       </ul>
 
-      <h3 className="text-xl font-semibold mt-4 mb-2">b. Information Collected Automatically</h3>
+      <h3 className="text-xl font-semibold mt-4 mb-2">
+        b. Information Collected Automatically
+      </h3>
       <ul className="list-disc pl-6 mb-4 space-y-1">
-        <li>Device information: device model, operating system, and app version.</li>
-        <li>App interactions: screens viewed, button clicks, and general usage statistics.</li>
-        <li>Error and performance data: crash reports and error logs via PostHog.</li>
+        <li>
+          Device information: device model, operating system, and app version.
+        </li>
+        <li>
+          App interactions: screens viewed, button clicks, and general usage
+          statistics.
+        </li>
+        <li>
+          Error and performance data: crash reports and error logs via PostHog.
+        </li>
       </ul>
       <p className="mb-4">
         This information helps us maintain and improve the App’s functionality.
@@ -49,20 +63,30 @@ export default function PrivacyPolicyPage() {
       </p>
 
       {/* Section 2 */}
-      <h2 className="text-2xl font-semibold mt-8 mb-3">2. How We Use Your Information</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-3">
+        2. How We Use Your Information
+      </h2>
       <ul className="list-disc pl-6 mb-6 space-y-1">
-        <li>Provide and operate the App and its blockchain-related features.</li>
+        <li>
+          Provide and operate the App and its blockchain-related features.
+        </li>
         <li>Authenticate users and manage embedded wallets.</li>
-        <li>Monitor performance, detect errors, and improve user experience.</li>
-        <li>Communicate with you about updates, security, or customer support.</li>
+        <li>
+          Monitor performance, detect errors, and improve user experience.
+        </li>
+        <li>
+          Communicate with you about updates, security, or customer support.
+        </li>
         <li>Comply with applicable legal obligations.</li>
       </ul>
 
       {/* Section 3 */}
-      <h2 className="text-2xl font-semibold mt-8 mb-3">3. Analytics and Tracking</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-3">
+        3. Analytics and Tracking
+      </h2>
       <p className="mb-4">
-        We use <strong>PostHog</strong> for analytics and error tracking. PostHog
-        may collect anonymized or pseudonymized data such as:
+        We use <strong>PostHog</strong> for analytics and error tracking.
+        PostHog may collect anonymized or pseudonymized data such as:
       </p>
       <ul className="list-disc pl-6 mb-4 space-y-1">
         <li>Device type and OS</li>
@@ -93,9 +117,16 @@ export default function PrivacyPolicyPage() {
         functionality and wallet management. When you use an embedded wallet:
       </p>
       <ul className="list-disc pl-6 mb-4 space-y-1">
-        <li>Your private keys are securely managed (we do not have access to your keys).</li>
-        <li>Your public wallet address and transactions are recorded on-chain.</li>
-        <li>We may use your wallet address for authentication and feature access.</li>
+        <li>
+          Your private keys are securely managed (we do not have access to your
+          keys).
+        </li>
+        <li>
+          Your public wallet address and transactions are recorded on-chain.
+        </li>
+        <li>
+          We may use your wallet address for authentication and feature access.
+        </li>
       </ul>
       <p className="mb-6">
         For more details, see{" "}
@@ -117,8 +148,14 @@ export default function PrivacyPolicyPage() {
         information only with:
       </p>
       <ul className="list-disc pl-6 mb-6 space-y-1">
-        <li>Service providers that help us operate the App (e.g., analytics, hosting).</li>
-        <li>Law enforcement or regulators, if required by law or to protect our rights.</li>
+        <li>
+          Service providers that help us operate the App (e.g., analytics,
+          hosting).
+        </li>
+        <li>
+          Law enforcement or regulators, if required by law or to protect our
+          rights.
+        </li>
       </ul>
 
       {/* Section 6 */}
@@ -154,7 +191,9 @@ export default function PrivacyPolicyPage() {
       </p>
 
       {/* Section 9 */}
-      <h2 className="text-2xl font-semibold mt-8 mb-3">9. Children’s Privacy</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-3">
+        9. Children’s Privacy
+      </h2>
       <p className="mb-6">
         Our App is not directed to children under 13 (or the relevant age of
         digital consent in your country). We do not knowingly collect personal
@@ -162,7 +201,9 @@ export default function PrivacyPolicyPage() {
       </p>
 
       {/* Section 10 */}
-      <h2 className="text-2xl font-semibold mt-8 mb-3">10. Changes to This Policy</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-3">
+        10. Changes to This Policy
+      </h2>
       <p className="mb-6">
         We may update this Privacy Policy from time to time. The updated version
         will be posted within the App and will indicate the “Last Updated” date.
@@ -174,7 +215,9 @@ export default function PrivacyPolicyPage() {
         If you have any questions or concerns about this Privacy Policy or your
         data, please contact us at:
       </p>
-      <p className="mb-1">📧 <strong>support@majority.fun</strong></p>
+      <p className="mb-1">
+        📧 <strong>support@majority.fun</strong>
+      </p>
     </div>
   );
 }

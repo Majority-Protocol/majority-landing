@@ -2,18 +2,24 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-type QuestionType = "Majority" | "Popular" | "Prediction" | "Opinion" | "Trivia";
+type QuestionType =
+  | "Majority"
+  | "Popular"
+  | "Prediction"
+  | "Opinion"
+  | "Trivia";
 
 const SelectorData = {
-  "Majority": {
+  Majority: {
     createImage: "/questions/majority.png",
     playImage: "/questions/play-majority.png",
     description: "Pick the answer you think most players will choose.",
   },
-  "Popular": {
+  Popular: {
     createImage: "/questions/popular.png",
     playImage: "/questions/play-popular.png",
-    description: "Choose your answer and guess how many others picked the same.",
+    description:
+      "Choose your answer and guess how many others picked the same.",
   },
   // "Prediction": {
   //   createImage: "/questions/prediction.png",
@@ -23,14 +29,18 @@ const SelectorData = {
   //   createImage: "/questions/opinion.png",
   //   playImage: "/questions/play-opinion.png",
   // },
-  "Trivia": {
+  Trivia: {
     createImage: "/questions/trivia.png",
     playImage: "/questions/play-trivia.png",
     description: "Select the correct answer to a trivia question.",
   },
 } as const;
 
-export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creator" | "player" }) => {
+export const CreateQuestionTypeSelector = ({
+  selectorType,
+}: {
+  selectorType: "creator" | "player";
+}) => {
   const [selectedItem, setSelectedItem] = useState<QuestionType>("Majority");
   const [displayedItem, setDisplayedItem] = useState<QuestionType>("Majority");
   const [isVisible, setIsVisible] = useState(true);
@@ -59,7 +69,7 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
   // Warm the cache for all candidate images in the background after mount
   useEffect(() => {
     const urls = Object.values(SelectorData).map((d) =>
-      selectorType === "creator" ? d.createImage : d.playImage
+      selectorType === "creator" ? d.createImage : d.playImage,
     );
     const unique = Array.from(new Set(urls));
     const preloaders = unique
@@ -80,13 +90,15 @@ export const CreateQuestionTypeSelector = ({selectorType}: {selectorType: "creat
   return (
     <div className="space-y-10">
       <div className="bg-white rounded-full flex justify-evenly p-3 text-sky-950 shadow-[inset_0_4px_6px_0_rgba(1,26,68,0.08)]">
-        {Object.entries(SelectorData).map(([item,]) => (
+        {Object.entries(SelectorData).map(([item]) => (
           <button
             type="button"
             key={item}
             onClick={() => handleItemClick(item as QuestionType)}
             className={`px-1.5 lg:px-12 py-1.5 lg:py-4 cursor-pointer rounded-full text-xs lg:text-base transition-colors ${
-              selectedItem === item ? "bg-[#011A44] text-white" : "bg-white hover:bg-sky-950/5"
+              selectedItem === item
+                ? "bg-[#011A44] text-white"
+                : "bg-white hover:bg-sky-950/5"
             }`}
           >
             {item}
