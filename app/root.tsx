@@ -75,7 +75,7 @@ export default function App() {
       "(prefers-reduced-motion: reduce)",
     );
 
-    const sections = Array.from(document.querySelectorAll("section"));
+    const sections = Array.from(document.querySelectorAll("#landing section"));
     sections.forEach((el) => {
       el.classList.add("reveal-on-scroll");
     });
