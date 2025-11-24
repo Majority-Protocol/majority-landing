@@ -4,7 +4,10 @@ import { StepPill } from "~/components/StepPill";
 
 export function LandingPage() {
   return (
-    <div className="flex flex-col gap-12 font-sans md:p-6 max-w-7xl mx-auto">
+    <div
+      id="landing"
+      className="flex flex-col gap-12 font-sans md:p-6 max-w-7xl mx-auto"
+    >
       <section
         id="hero"
         className="bg-linear-223 from-sky-600 to-blue-700 text-white md:rounded-3xl md:px-20"
@@ -91,7 +94,7 @@ export function LandingPage() {
 
       <section
         id="step-2"
-        className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-sky-950 mx-6 h-[1000px] relative rounded-3xl md:px-10 overflow-clip"
+        className="py-6 md:py-9 bg-linear-360 from-yellow-50/20 to-amber-400/20 text-sky-950 mx-6 h-[880px] relative rounded-3xl md:px-10 overflow-clip"
       >
         <div className="flex flex-col mx-auto px-4">
           <div className="text-center mb-12">
@@ -193,17 +196,17 @@ export function LandingPage() {
               image="/cards/earn-beyond.png"
             />
             <Card
-              title="Higher discoverability"
+              title="Get Discovered"
               description="Interactive streams stand out in feeds."
               image="/cards/higher-discoverability.png"
             />
             <Card
-              title="Stronger community"
+              title="Strengthen your community"
               description="Shared games and prizes build belonging."
               image="/cards/stronger-community.png"
             />
             <Card
-              title="Referral earnings"
+              title="Incentivize Growth"
               description="Fans earn a percentage of each ticket bought by people they refer, giving creators a built-in audience-growth incentive."
               image="/cards/referral-earnings.png"
             />
