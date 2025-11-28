@@ -4,4 +4,5 @@ export default [
   index("routes/home.tsx"),
   route("privacy", "routes/privacy.tsx"),
   route("terms", "routes/terms.tsx"),
+  route("android", "routes/android.tsx"),
 ] satisfies RouteConfig;
