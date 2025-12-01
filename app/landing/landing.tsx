@@ -31,7 +31,6 @@ export function LandingPage() {
                     Crowdsource and distribute prizes in shows without
                     intermediaries
                   </p>
-                  <p className="text-l text-blue-100 pb-4">Coming soon</p>
                   <div className="flex justify-center md:justify-start gap-4">
                     <a href={IOS_URL} target="_blank" rel="noopener noreferrer">
                       <img src="/app-store.svg" alt="Download on App Store" />
