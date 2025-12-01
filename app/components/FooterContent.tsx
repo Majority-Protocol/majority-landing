@@ -1,3 +1,5 @@
+import { ANDROID_URL, IOS_URL } from "~/constants";
+
 export const FooterContent = () => {
   return (
     <div className="text-white">
@@ -10,7 +12,7 @@ export const FooterContent = () => {
         <div className="flex flex-col md:flex-row gap-16 text-sm">
           <div className="space-y-3">
             <div className="uppercase tracking-wide text-white/80">Socials</div>
-            <ul className="space-y-2">
+            <ul className="flex items-center gap-2">
               <li>
                 <a
                   href="https://x.com/Majority_Fun"
@@ -66,15 +68,25 @@ export const FooterContent = () => {
             <div className="uppercase tracking-wide text-white/80">Play</div>
             <ul className="space-y-2">
               <li>
-                <span className="text-white/50 cursor-not-allowed">
+                <a
+                  href={IOS_URL}
+                  className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Download for iOS
-                </span>
+                </a>
               </li>
-              {/* <li>
-                <span className="text-white/50 cursor-not-allowed">
+              <li>
+                <a
+                  href={ANDROID_URL}
+                  className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Download for Android
-                </span>
-              </li> */}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

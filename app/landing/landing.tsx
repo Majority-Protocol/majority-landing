@@ -1,6 +1,7 @@
 import { Card } from "~/components/Card";
 import { CreateQuestionTypeSelector } from "~/components/CreateQuestionTypeSelector";
 import { StepPill } from "~/components/StepPill";
+import { ANDROID_URL, IOS_URL } from "~/constants";
 
 export function LandingPage() {
   return (
@@ -17,7 +18,7 @@ export function LandingPage() {
             <div className="flex flex-col gap-20">
               <img
                 src="/white-logo.svg"
-                alt="M ajority Logo"
+                alt="Majority Logo"
                 width={219}
                 height={45}
               />
@@ -32,8 +33,16 @@ export function LandingPage() {
                   </p>
                   <p className="text-l text-blue-100 pb-4">Coming soon</p>
                   <div className="flex justify-center md:justify-start gap-4">
-                    <img src="/app-store.svg" alt="Download on App Store" />
-                    {/* <img src="/google-play.svg" alt="Get it on Google Play" /> */}
+                    <a href={IOS_URL} target="_blank" rel="noopener noreferrer">
+                      <img src="/app-store.svg" alt="Download on App Store" />
+                    </a>
+                    <a
+                      href={ANDROID_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="/google-play.svg" alt="Get it on Google Play" />
+                    </a>
                   </div>
                 </div>
                 <img
@@ -160,8 +169,12 @@ export function LandingPage() {
         <div className="mx-auto px-4 text-center">
           <h2 className="text-xl lg:text-2xl mb-8">DOWNLOAD THE APP</h2>
           <div className="flex justify-center gap-4">
-            <img src="/app-store.svg" alt="Download on App Store" />
-            {/* <img src="/google-play.svg" alt="Get it on Google Play" /> */}
+            <a href={IOS_URL} target="_blank" rel="noopener noreferrer">
+              <img src="/app-store.svg" alt="Download on App Store" />
+            </a>
+            <a href={ANDROID_URL} target="_blank" rel="noopener noreferrer">
+              <img src="/google-play.svg" alt="Get it on Google Play" />
+            </a>
           </div>
         </div>
       </section>
