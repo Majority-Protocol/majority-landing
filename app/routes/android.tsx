@@ -46,7 +46,8 @@ export default function AndroidPage() {
             <li className="flex gap-3">
               <span className="font-semibold text-sky-600">2.</span>
               <span>
-                Tap <strong>Apps</strong> or <strong>Apps & Notifications</strong>
+                Tap <strong>Apps</strong> or{" "}
+                <strong>Apps & Notifications</strong>
               </span>
             </li>
             <li className="flex gap-3">
@@ -140,13 +141,16 @@ export default function AndroidPage() {
             </li>
             <li className="flex gap-3">
               <span className="font-semibold text-blue-600">2.</span>
-              <span>
-                Navigate to the Android download page on our website
-              </span>
+              <span>Navigate to the Android download page on our website</span>
             </li>
             <li className="flex gap-3">
               <span className="font-semibold text-blue-600">3.</span>
-              <a className="text-blue-600 hover:underline" href="https://expo.dev/artifacts/eas/kVJyB8j2n2imHeNoxm82y1.apk">Tap this link to download the APK file</a>
+              <a
+                className="text-blue-600 hover:underline"
+                href="https://expo.dev/artifacts/eas/kVJyB8j2n2imHeNoxm82y1.apk"
+              >
+                Tap this link to download the APK file
+              </a>
             </li>
             <li className="flex gap-3">
               <span className="font-semibold text-blue-600">4.</span>
@@ -192,9 +196,7 @@ export default function AndroidPage() {
             </li>
             <li className="flex gap-3">
               <span className="font-semibold text-indigo-600">2.</span>
-              <span>
-                Find the Majority APK file in your downloads list
-              </span>
+              <span>Find the Majority APK file in your downloads list</span>
             </li>
             <li className="flex gap-3">
               <span className="font-semibold text-indigo-600">3.</span>
@@ -241,9 +243,7 @@ export default function AndroidPage() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Parse error
-              </h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Parse error</h3>
               <p className="text-gray-700">
                 If you see a parse error, the APK file may be corrupted. Try
                 downloading it again from our website.
