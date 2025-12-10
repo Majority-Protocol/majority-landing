@@ -5,6 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useMatches,
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -47,6 +48,10 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const matches = useMatches();
+
+  const footerType = matches[matches.length - 1]?.handle as "none" | undefined;
+
   return (
     <html lang="en">
       <head>
@@ -57,9 +62,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body className="min-h-screen flex flex-col">
         <main className="flex-1">{children}</main>
-        <footer className="w-full bg-gradient-to-b from-sky-600 to-sky-950">
-          <FooterContent />
-        </footer>
+        {footerType === "none" ? null : (
+          <footer className="w-full bg-gradient-to-b from-sky-600 to-sky-950">
+            <FooterContent />
+          </footer>
+        )}
         <ScrollRestoration />
         <Scripts />
       </body>
