@@ -111,18 +111,17 @@ export default function RulesPage() {
             defined below) in that Contest.
           </p>
           <p>
-            <span className="font-semibold">
-              Notice to all international entrants:
-            </span>{" "}
-            It is your responsibility to comply with the contest laws of your
-            country/jurisdiction. You acknowledge that certain
-            countries/jurisdictions have laws regarding Contests that may
-            prevent the Protocol from awarding you your Prize. If you are a
-            winner and this happens to be the case with your
-            country/jurisdiction, you acknowledge that you may not be able to
-            receive any Prize at all from the Protocol. By entering this
-            Contest, you acknowledge the risks, and understand that you may win,
-            but not be able to receive a Prize.
+            <span className="font-semibold">Notice to all entrants:</span> It is
+            your sole responsibility to ensure that your participation in this
+            contest complies with the laws and regulations of your country,
+            state or jurisdiction. You acknowledge that certain countries or
+            jurisdictions may have laws, restrictions, or requirements that
+            prevent you from legally participating in or receiving prizes from
+            this contest. By entering, you confirm that you are eligible to
+            participate and accept any prize under applicable law. You are fully
+            responsible for ensuring you can legally accept and receive prizes.
+            If your local laws prohibit or restrict your participation or
+            receipt of the prize, you may not be able to claim it.
           </p>
         </section>
 
@@ -397,6 +396,85 @@ export default function RulesPage() {
           <p>
             A list of prize winners will be recorded via the functionality of
             the Protocol and can be viewed therein.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">
+            13. Third-Party Services and Infrastructure
+          </h2>
+          <h3 className="text-xl font-semibold">
+            (a) Reliance on Third Parties
+          </h3>
+          <p>
+            The Services, including participation in Games, may rely on
+            third-party providers, such as Alchemy, for certain functionalities,
+            including but not limited to processing gas fees, transaction
+            facilitation, or other blockchain-related operations. You
+            acknowledge and agree that Majority Games does not control these
+            third-party services and that their availability, performance, or
+            reliability is subject to factors beyond our control, including
+            downtime, outages, maintenance, or other disruptions. Majority Games
+            makes no representations, warranties, or guarantees regarding the
+            uninterrupted or error-free operation of these third-party services.
+          </p>
+          <h3 className="text-xl font-semibold">
+            (b) User Responsibility and Risks
+          </h3>
+          <p>
+            It is your sole responsibility to ensure that you can access and use
+            the Services, including any required third-party integrations, in
+            compliance with applicable laws and without interruption. By
+            participating in the Services or any Games, you acknowledge the
+            inherent risks associated with reliance on third-party
+            infrastructure, such as potential inability to complete
+            transactions, enter contests, or play due to third-party failures.
+            You agree that Majority Games shall not be liable for any losses,
+            damages, or inability to participate arising from such third-party
+            issues, and you assume all risks related thereto.
+          </p>
+          <h3 className="text-xl font-semibold">(c) No Liability</h3>
+          <p>
+            To the fullest extent permitted by law, Majority Games and its
+            affiliates, officers, directors, agents, investors, subsidiaries,
+            and employees shall have no liability for any claims, demands, or
+            damages (actual, consequential, incidental, or otherwise) resulting
+            from the unavailability, malfunction, or failure of any third-party
+            services, including those used for gas payments or other essential
+            operations. This includes, without limitation, any delays, losses of
+            opportunity, or forfeitures in Games or transactions.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">
+            14. Game-Show Host - Entertainment-Only Disclaimer
+          </h2>
+          <p className="italic">
+            The game-show hosts featured acts{" "}
+            <span className="font-semibold">
+              solely as an entertainer. Host statements are for entertainment
+              purposes only and should not be relied upon as factual, legal,
+              financial, or professional advice.
+            </span>
+            The host makes no warranties, express or implied, regarding the
+            truthfulness or accuracy of any remarks made during the program.
+          </p>
+          <p className="italic">
+            The host does not sponsor or endorse games, contests, or any related
+            activities presented. All gameplay, challenges, and prize
+            distributions are conducted independently of the host.
+          </p>
+          <p className="italic">
+            By watching or participating, you acknowledge that the host bears{" "}
+            <span className="font-semibold">no liability</span> for any aspect
+            of the contest—including technical glitches, loss of assets,
+            disputes between participants, or any other outcome arising from the
+            gameplay. All risks are assumed by the participants themselves.
+          </p>
+          <p className="italic">
+            This disclaimer applies to every episode, segment, and related
+            promotional material featuring hosts.
           </p>
         </section>
       </article>
