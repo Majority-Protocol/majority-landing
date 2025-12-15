@@ -59,7 +59,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col overflow-hidden overscroll-none">
         <main className="flex-1">{children}</main>
         {footerType === "none" ? null : (
           <footer className="w-full bg-gradient-to-b from-sky-600 to-sky-950">

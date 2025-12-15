@@ -208,7 +208,7 @@ export default function Homepage() {
       <Background />
       <div className="flex flex-col items-center justify-center h-full z-10 relative space-y-5 md:space-y-8 2xl:space-y-12">
         <MajorityLogo className="w-20 md:w-32 3xl:w-48 h-auto" />
-        <div className="flex flex-col items-center font-bold text-2xl md:text-6xl text-[#FEF7D2] space-y-2">
+        <div className="flex flex-col items-center font-bold text-2xl md:text-6xl text-secondary-fade space-y-2">
           <p>Think like the crowd.</p>
           <p>Win big.</p>
         </div>
