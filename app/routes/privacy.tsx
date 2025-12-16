@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
           Majority Games Privacy Notice
         </h1>
         <p>
-          <span className="font-bold">Last updated:</span> November 24, 2025
+          <span className="font-bold">Last updated:</span> December 16, 2025
         </p>
       </header>
       <ol className="list-decimal list-inside space-y-1">
@@ -144,7 +144,10 @@ export default function PrivacyPolicyPage() {
                   Your Communications with Us.
                 </span>{" "}
                 We, and our service providers, may collect the information you
-                communicate to us, such as through email or our web chat tool.
+                communicate to us and players, such as through email, our web
+                chat tool, chat, comments and opinions that you send through any
+                in-app messaging features, or when you submit requests for
+                technical support.
               </li>
               <li>
                 <span className="font-semibold">Surveys.</span> We may contact
