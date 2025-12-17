@@ -1,4 +1,4 @@
-import { ANDROID_URL, IOS_URL } from "~/constants";
+import { ANDROID_URL, DISCORD_URL, IOS_URL, X_URL } from "~/constants";
 
 export const FooterContent = () => {
   return (
@@ -15,7 +15,7 @@ export const FooterContent = () => {
             <ul className="flex items-center gap-2">
               <li>
                 <a
-                  href="https://x.com/Majority_Fun"
+                  href={X_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
@@ -25,7 +25,7 @@ export const FooterContent = () => {
               </li>
               <li>
                 <a
-                  href="https://discord.gg/PuCH8sDj8j"
+                  href={DISCORD_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
@@ -42,11 +42,6 @@ export const FooterContent = () => {
           <div className="space-y-3">
             <div className="uppercase tracking-wide text-white/80">Create</div>
             <ul className="space-y-2">
-              <li>
-                <a href="/docs" className="hover:underline">
-                  Docs
-                </a>
-              </li>
               <li>
                 <a href="/logos.zip" className="hover:underline">
                   Media Kit
