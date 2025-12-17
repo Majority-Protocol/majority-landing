@@ -4,7 +4,13 @@ import downloadAndroid from "~/assets/download-android.png";
 import downloadIos from "~/assets/download-ios.svg";
 import { Avatar, AvatarGroup, AvatarImage } from "~/components/avatar";
 import { Button } from "~/components/button";
-import { DISCORD_URL, IOS_URL, X_URL, YOUTUBE_URL } from "~/constants";
+import {
+  ANDROID_URL,
+  DISCORD_URL,
+  IOS_URL,
+  X_URL,
+  YOUTUBE_URL,
+} from "~/constants";
 
 const MajorityLogo = ({ className }: { className?: string }) => (
   <svg
@@ -254,7 +260,7 @@ export default function Homepage() {
               />
             </Link>
             <Link
-              to={IOS_URL}
+              to={ANDROID_URL}
               className="hover:scale-105 active:scale-95 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
