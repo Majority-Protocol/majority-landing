@@ -4,6 +4,7 @@ import downloadAndroid from "~/assets/download-android.png";
 import downloadIos from "~/assets/download-ios.svg";
 import { Avatar, AvatarGroup, AvatarImage } from "~/components/avatar";
 import { Button } from "~/components/button";
+import { DISCORD_URL, IOS_URL, X_URL, YOUTUBE_URL } from "~/constants";
 
 const MajorityLogo = ({ className }: { className?: string }) => (
   <svg
@@ -57,7 +58,7 @@ const Discord = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const Instagram = ({ className }: { className?: string }) => (
+const _Instagram = ({ className }: { className?: string }) => (
   <svg
     className={className}
     xmlns="http://www.w3.org/2000/svg"
@@ -192,13 +193,34 @@ export default function Homepage() {
         <div className="px-4 md:px-8 max-w-7xl mx-auto">
           <header className="flex h-(--header-height) items-center gap-2">
             <div className="flex items-center gap-4">
-              <Discord className="sm:size-8 size-4" />
-              <Instagram className="sm:size-8 size-4" />
-              <X className="sm:size-6 size-4" />
-              <Youtube className="sm:size-8 size-4" />
+              <Link
+                to={DISCORD_URL}
+                className="hover:scale-105 active:scale-95 transition-transform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Discord className="sm:size-8 size-4" />
+              </Link>
+              {/* <Instagram className="sm:size-8 size-4" /> */}
+              <Link
+                to={X_URL}
+                className="hover:scale-105 active:scale-95 transition-transform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <X className="sm:size-6 size-4" />
+              </Link>
+              <Link
+                to={YOUTUBE_URL}
+                className="hover:scale-105 active:scale-95 transition-transform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Youtube className="sm:size-8 size-4" />
+              </Link>
             </div>
             <Button
-              className="ml-auto"
+              className="ml-auto h-8 rounded-md gap-1.5 px-3 md:h-12 md:px-6 md:py-4 md:rounded-[40px]"
               nativeButton={false}
               render={<Link to="/host">Create Show</Link>}
             />
@@ -219,16 +241,30 @@ export default function Homepage() {
         </p>
         <div className="flex flex-col items-center gap-4 mb-6 md:mb-24">
           <div className="flex items-center gap-4">
-            <img
-              src={downloadIos}
-              alt="Download iOS app"
-              className="w-28 md:w-40"
-            />
-            <img
-              src={downloadAndroid}
-              alt="Download Android app"
-              className="w-30 md:w-44"
-            />
+            <Link
+              to={IOS_URL}
+              className="hover:scale-105 active:scale-95 transition-transform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={downloadIos}
+                alt="Download iOS app"
+                className="w-28 md:w-40"
+              />
+            </Link>
+            <Link
+              to={IOS_URL}
+              className="hover:scale-105 active:scale-95 transition-transform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={downloadAndroid}
+                alt="Download Android app"
+                className="w-30 md:w-44"
+              />
+            </Link>
           </div>
         </div>
         <div className="flex items-center justify-center gap-2 text-white">
@@ -248,9 +284,13 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <footer className="absolute right-4 w-max bottom-4 flex text-sm items-center text-white gap-4 md:gap-8">
-        <Link to="/app">Terms of Service</Link>
-        <Link to="/app">Privacy Policy</Link>
+      <footer className="absolute right-4 w-max bottom-4 z-50 flex text-sm items-center text-white gap-4 md:gap-8">
+        <Link to="/terms" className="hover:underline">
+          Terms of Service
+        </Link>
+        <Link to="/privacy" className="hover:underline">
+          Privacy Policy
+        </Link>
       </footer>
     </div>
   );
