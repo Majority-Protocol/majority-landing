@@ -178,7 +178,21 @@ export default function RulesPage() {
 
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">
-            4. Judgement and Selection of the Winner
+            4. Question Timing and Submission Buffer
+          </h2>
+          <p>
+            Each question has a fixed response time displayed in the app. When
+            the visible timer reaches zero, a 4-second buffer period begins to
+            account for network latency and on-chain transaction confirmation.
+            Submissions (as on-chain transactions) that are broadcast during
+            this buffer and successfully confirmed will be accepted as timely.
+            Submissions after the buffer ends will not be accepted.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">
+            5. Judgement and Selection of the Winner
           </h2>
           <p>
             The Protocol and other blockchain technologies, including without
@@ -200,7 +214,7 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">5. Prizes and Odds</h2>
+          <h2 className="text-2xl font-semibold">6. Prizes and Odds</h2>
           <p>
             The prizes to be awarded (collectively,{" "}
             <span className="font-semibold">"Prizes"</span>), including the
@@ -229,7 +243,7 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">6. Notification of Winners</h2>
+          <h2 className="text-2xl font-semibold">7. Notification of Winners</h2>
           <div className="space-y-3">
             <h3 className="text-xl font-semibold">
               (a) Result Finalization; Disputing Results
@@ -284,7 +298,7 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">7. Disclaimers</h2>
+          <h2 className="text-2xl font-semibold">8. Disclaimers</h2>
           <div className="space-y-3">
             <p>
               <span className="font-semibold">(a)</span> Sponsor is not
@@ -313,7 +327,7 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">8. Indemnification</h2>
+          <h2 className="text-2xl font-semibold">9. Indemnification</h2>
           <p>
             You agree to indemnify, defend and hold Sponsor and its parent,
             affiliates, subsidiaries, directors, officers, employees, sponsors
@@ -334,7 +348,7 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">9. Additional Conditions</h2>
+          <h2 className="text-2xl font-semibold">10. Additional Conditions</h2>
           <p>
             You acknowledge and agree that the Protocol allows the Sponsor to,
             in its sole discretion, to terminate, modify or suspend the Contest
@@ -370,7 +384,7 @@ export default function RulesPage() {
 
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">
-            10. Governing Law and Choice of Forum
+            11. Governing Law and Choice of Forum
           </h2>
           <p>
             These Official Rules are governed by the law of the Cayman Islands,
@@ -382,7 +396,7 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">11. Personal Information</h2>
+          <h2 className="text-2xl font-semibold">12. Personal Information</h2>
           <p>
             Sponsor may collect personal data about entrants online, in
             accordance with its privacy notice and as may be more specifically
@@ -392,7 +406,7 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">12. Winner</h2>
+          <h2 className="text-2xl font-semibold">13. Winner</h2>
           <p>
             A list of prize winners will be recorded via the functionality of
             the Protocol and can be viewed therein.
@@ -401,7 +415,7 @@ export default function RulesPage() {
 
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">
-            13. Third-Party Services and Infrastructure
+            14. Third-Party Services and Infrastructure
           </h2>
           <h3 className="text-xl font-semibold">
             (a) Reliance on Third Parties
@@ -448,9 +462,9 @@ export default function RulesPage() {
 
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">
-            14. Game-Show Host - Entertainment-Only Disclaimer
+            15. Game-Show Host - Entertainment-Only Disclaimer
           </h2>
-          <p className="italic">
+          <p>
             The game-show hosts featured acts{" "}
             <span className="font-semibold">
               solely as an entertainer. Host statements are for entertainment
@@ -460,19 +474,19 @@ export default function RulesPage() {
             The host makes no warranties, express or implied, regarding the
             truthfulness or accuracy of any remarks made during the program.
           </p>
-          <p className="italic">
+          <p>
             The host does not sponsor or endorse games, contests, or any related
             activities presented. All gameplay, challenges, and prize
             distributions are conducted independently of the host.
           </p>
-          <p className="italic">
+          <p>
             By watching or participating, you acknowledge that the host bears{" "}
             <span className="font-semibold">no liability</span> for any aspect
             of the contest—including technical glitches, loss of assets,
             disputes between participants, or any other outcome arising from the
             gameplay. All risks are assumed by the participants themselves.
           </p>
-          <p className="italic">
+          <p>
             This disclaimer applies to every episode, segment, and related
             promotional material featuring hosts.
           </p>
