@@ -12,7 +12,7 @@ import {
   YOUTUBE_URL,
 } from "~/constants";
 
-const MajorityLogo = ({ className }: { className?: string }) => (
+const _MajorityLogo = ({ className }: { className?: string }) => (
   <svg
     viewBox="0 0 412 489"
     fill="none"
@@ -235,8 +235,12 @@ export default function Homepage() {
       </div>
       <Background />
       <div className="flex flex-col items-center justify-center h-full z-10 relative space-y-5 md:space-y-8 2xl:space-y-12">
-        <MajorityLogo className="w-20 md:w-32 3xl:w-48 h-auto" />
-        <div className="flex flex-col items-center font-bold text-2xl md:text-6xl text-secondary-fade space-y-2">
+        <img
+          src="/logos/majority-logo-large.png"
+          alt="Majority"
+          className="w-72 h-auto"
+        />
+        <div className="flex flex-col items-center font-bold text-2xl md:text-6xl text-[#FEF7D2] space-y-2">
           <p>Think like the crowd.</p>
           <p>Win big.</p>
         </div>
@@ -304,7 +308,7 @@ export default function Homepage() {
 
 const Background = () => (
   <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute h-300 w-420 blur-lg top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[radial-gradient(#114577_5%,transparent_70%)]" />
+    <div className="absolute h-300 w-420 blur-lg top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[radial-gradient(#0F5184,transparent_60%)]" />
     <div className="hidden lg:block absolute size-[75vh] right-[-55vh] top-1/2 -translate-y-1/2 bg-linear-to-b from-secondary to-secondary-fade rounded-[85px]" />
     <div className="hidden lg:block absolute size-[75vh] left-[-55vh] top-1/2 -translate-y-1/2 bg-linear-to-b from-secondary to-secondary-fade rounded-[85px]" />
   </div>
