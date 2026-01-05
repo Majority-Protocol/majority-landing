@@ -59,7 +59,7 @@ const Discord = ({ className }: { className?: string }) => (
   >
     <path
       d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"
-      fill="white"
+      fill="currentColor"
     />
   </svg>
 );
@@ -168,7 +168,7 @@ const X = ({ className }: { className?: string }) => (
     className={className}
   >
     <path
-      fill="white"
+      fill="currentColor"
       d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"
     />
   </svg>
@@ -182,51 +182,47 @@ const Youtube = ({ className }: { className?: string }) => (
     className={className}
   >
     <path
-      fill="white"
+      fill="currentColor"
       d="M250.346 28.075A32.18 32.18 0 0 0 227.69 5.418C207.824 0 127.87 0 127.87 0S47.912.164 28.046 5.582A32.18 32.18 0 0 0 5.39 28.24c-6.009 35.298-8.34 89.084.165 122.97a32.18 32.18 0 0 0 22.656 22.657c19.866 5.418 99.822 5.418 99.822 5.418s79.955 0 99.82-5.418a32.18 32.18 0 0 0 22.657-22.657c6.338-35.348 8.291-89.1-.164-123.134Z"
     />
-    <path
-      className="fill-[#001842]"
-      d="m102.421 128.06 66.328-38.418-66.328-38.418z"
-    />
+    <path fill="white" d="m102.421 128.06 66.328-38.418-66.328-38.418z" />
   </svg>
 );
 
 export default function Homepage() {
   return (
-    <div className="relative h-screen bg-[#001842]">
-      <div className="fixed top-0 z-50 w-full">
+    <div className="relative min-h-screen bg-white">
+      <div className="fixed top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="px-4 md:px-8 max-w-7xl mx-auto">
           <header className="flex h-(--header-height) items-center gap-2">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 text-primary">
               <Link
                 to={DISCORD_URL}
-                className="hover:scale-105 active:scale-95 transition-transform"
+                className="hover:scale-110 hover:text-secondary active:scale-95 transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Discord className="sm:size-8 size-4" />
+                <Discord className="sm:size-8 size-5" />
               </Link>
-              {/* <Instagram className="sm:size-8 size-4" /> */}
               <Link
                 to={X_URL}
-                className="hover:scale-105 active:scale-95 transition-transform"
+                className="hover:scale-110 hover:text-secondary active:scale-95 transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <X className="sm:size-6 size-4" />
+                <X className="sm:size-6 size-5" />
               </Link>
               <Link
                 to={YOUTUBE_URL}
-                className="hover:scale-105 active:scale-95 transition-transform"
+                className="hover:scale-110 hover:text-secondary active:scale-95 transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Youtube className="sm:size-8 size-4" />
+                <Youtube className="sm:size-8 size-5" />
               </Link>
             </div>
             <Button
-              className="ml-auto h-8 rounded-md gap-1.5 px-3 md:h-12 md:px-6 md:py-4 md:rounded-[40px]"
+              className="ml-auto"
               nativeButton={false}
               render={<Link to="/host">Create Show</Link>}
             />
@@ -234,53 +230,57 @@ export default function Homepage() {
         </div>
       </div>
       <Background />
-      <div className="flex flex-col items-center justify-center h-full z-10 relative space-y-5 md:space-y-8 2xl:space-y-12">
+      <div className="flex flex-col items-center justify-center min-h-screen z-10 relative pt-24 pb-16 px-4 space-y-6 md:space-y-10">
         <img
           src="/logos/majority-logo-large.png"
           alt="Majority"
-          className="w-72 h-auto"
+          className="w-48 md:w-80 h-auto drop-shadow-lg"
         />
-        <div className="flex flex-col items-center font-bold text-2xl md:text-6xl text-[#FEF7D2] space-y-2">
-          <p>Think like the crowd.</p>
-          <p>Win big.</p>
+        <div className="flex flex-col items-center text-center space-y-2">
+          <h1 className="font-black text-3xl md:text-6xl lg:text-7xl text-[#001842] tracking-tight">
+            Think like the crowd.
+          </h1>
+          <h1 className="font-black text-3xl md:text-6xl lg:text-7xl text-gradient-gold tracking-tight">
+            Win big.
+          </h1>
         </div>
-        <p className="text-white max-w-3xl px-8 xl:px-0 text-center text-pretty text-xs md:text-xl">
+        <p className="text-gray-600 max-w-2xl text-center text-pretty text-sm md:text-xl font-medium">
           A fast-paced mobile game show where you compete to win USDC by
           thinking like the crowd. Know the crowd, beat the clock and earn
           prizes.
         </p>
-        <div className="flex flex-col items-center gap-4 mb-6 md:mb-24">
+        <div className="flex flex-col items-center gap-6 pt-4">
           <div className="flex items-center gap-4">
             <Link
               to={IOS_URL}
-              className="hover:scale-105 active:scale-95 transition-transform"
+              className="hover:scale-105 hover:-translate-y-1 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-xl rounded-xl"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
                 src={downloadIos}
                 alt="Download iOS app"
-                className="w-28 md:w-40"
+                className="w-32 md:w-44"
               />
             </Link>
             <Link
               to={ANDROID_URL}
-              className="hover:scale-105 active:scale-95 transition-transform"
+              className="hover:scale-105 hover:-translate-y-1 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-xl rounded-xl"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
                 src={downloadAndroid}
                 alt="Download Android app"
-                className="w-30 md:w-44"
+                className="w-36 md:w-48"
               />
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-2 text-white">
+        <div className="flex items-center justify-center gap-3 pt-4">
           <AvatarGroup>
             {["alex", "maria", "james", "sofia"].map((name) => (
-              <Avatar key={name} className="ring-1 ring-[#114577]!">
+              <Avatar key={name} className="ring-2 ring-secondary/50!">
                 <AvatarImage
                   avatar={`https://i.pravatar.cc/150?u=${name}`}
                   address={name}
@@ -288,29 +288,42 @@ export default function Homepage() {
               </Avatar>
             ))}
           </AvatarGroup>
-          <div className="flex flex-col text-sm">
+          <div className="flex flex-col text-sm text-gray-600">
             <p>Loved by</p>
-            <p className="font-medium">thousands</p>
+            <p className="font-bold text-[#001842]">thousands</p>
           </div>
         </div>
       </div>
-      <footer className="absolute right-4 w-max bottom-4 z-50 flex text-sm items-center text-white gap-4 md:gap-8">
-        <Link to="/terms" className="hover:underline">
-          Terms of Service
-        </Link>
-        <Link to="/privacy" className="hover:underline">
-          Privacy Policy
-        </Link>
+      <footer className="absolute left-0 right-0 bottom-0 z-50 bg-[#001842] py-4">
+        <div className="flex justify-center items-center text-sm text-white/80 gap-6 md:gap-8">
+          <Link
+            to="/terms"
+            className="hover:text-white hover:underline transition-colors"
+          >
+            Terms of Service
+          </Link>
+          <Link
+            to="/privacy"
+            className="hover:text-white hover:underline transition-colors"
+          >
+            Privacy Policy
+          </Link>
+        </div>
       </footer>
     </div>
   );
 }
 
 const Background = () => (
-  <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute h-300 w-420 blur-lg top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[radial-gradient(#0F5184,transparent_60%)]" />
-    <div className="hidden lg:block absolute size-[75vh] right-[-55vh] top-1/2 -translate-y-1/2 bg-linear-to-b from-secondary to-secondary-fade rounded-[85px]" />
-    <div className="hidden lg:block absolute size-[75vh] left-[-55vh] top-1/2 -translate-y-1/2 bg-linear-to-b from-secondary to-secondary-fade rounded-[85px]" />
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    {/* Soft blue gradient in center */}
+    <div className="absolute h-[600px] w-[800px] blur-3xl top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary/5 rounded-full" />
+    {/* Gold accent - right side */}
+    <div className="hidden lg:block absolute size-[500px] right-[-200px] top-1/4 bg-secondary/10 rounded-full blur-3xl" />
+    {/* Blue accent - left side */}
+    <div className="hidden lg:block absolute size-[400px] left-[-150px] bottom-1/4 bg-primary/10 rounded-full blur-3xl" />
+    {/* Small gold accent - top */}
+    <div className="absolute size-[300px] right-1/4 top-[-100px] bg-secondary/15 rounded-full blur-3xl" />
   </div>
 );
 
