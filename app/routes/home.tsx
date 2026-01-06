@@ -169,7 +169,7 @@ const Youtube = ({ className }: { className?: string }) => (
 
 export default function Homepage() {
   return (
-    <div className="relative min-h-screen bg-white overflow-y-auto flex flex-col">
+    <div className="relative bg-white flex flex-col">
       <div className="fixed top-0 z-50 w-full bg-transparent">
         <div className="px-4 md:px-8 max-w-7xl mx-auto">
           <header className="flex h-(--header-height) items-center gap-2">
@@ -209,7 +209,7 @@ export default function Homepage() {
         </div>
       </div>
       <Background />
-      <div className="flex-1 flex flex-col items-center justify-center z-10 relative pt-20 md:pt-24 pb-4 px-4 space-y-4 md:space-y-6">
+      <div className="flex flex-col items-center z-10 relative pt-24 md:pt-28 pb-4 px-4 space-y-4 md:space-y-6">
         <img
           src="/logos/majority-logo-large.png"
           alt="Majority"
@@ -272,7 +272,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <footer className="z-50 bg-transparent py-6 pb-12 md:py-4">
+      <footer className="z-50 bg-transparent py-6 pb-20 md:py-4">
         <div className="flex justify-center items-center text-sm text-gray-500 gap-6 md:gap-8">
           <Link
             to="/terms"
