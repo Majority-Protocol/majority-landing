@@ -201,7 +201,7 @@ export default function Homepage() {
             </div>
             <Button
               variant="secondary"
-              className="ml-auto scale-75 md:scale-100 origin-right"
+              className="ml-auto scale-75 md:scale-100 origin-right hover:scale-75 md:hover:scale-100 active:scale-75 md:active:scale-100 hover:brightness-110 active:brightness-95"
               nativeButton={false}
               render={<Link to="/host">Create Show</Link>}
             />
