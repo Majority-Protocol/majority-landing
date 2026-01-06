@@ -213,7 +213,7 @@ export default function Homepage() {
         <img
           src="/logos/majority-logo-large.png"
           alt="Majority"
-          className="w-36 md:w-64 h-auto rounded-2xl"
+          className="w-48 md:w-64 h-auto rounded-2xl"
         />
         <div className="h-1 md:h-2"></div>
         <div className="flex flex-col items-center text-center space-y-2 overflow-visible">
