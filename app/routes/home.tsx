@@ -169,18 +169,18 @@ const Youtube = ({ className }: { className?: string }) => (
 
 export default function Homepage() {
   return (
-    <div className="relative bg-white flex flex-col">
+    <div className="relative bg-white flex flex-col md:h-screen md:overflow-hidden">
       <div className="fixed top-0 z-50 w-full bg-transparent">
         <div className="px-4 md:px-8 max-w-7xl mx-auto">
           <header className="flex h-(--header-height) items-center gap-2">
-            <div className="flex items-center gap-4 text-primary">
+            <div className="flex items-center gap-4 text-[#001842]">
               <Link
                 to={DISCORD_URL}
                 className="hover:scale-110 hover:text-secondary active:scale-95 transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Discord className="sm:size-8 size-5" />
+                <Discord className="sm:size-6 size-4" />
               </Link>
               <Link
                 to={X_URL}
@@ -188,7 +188,7 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <X className="sm:size-6 size-5" />
+                <X className="sm:size-5 size-4" />
               </Link>
               <Link
                 to={YOUTUBE_URL}
@@ -196,7 +196,7 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Youtube className="sm:size-8 size-5" />
+                <Youtube className="sm:size-6 size-4" />
               </Link>
             </div>
             <Button
@@ -209,7 +209,7 @@ export default function Homepage() {
         </div>
       </div>
       <Background />
-      <div className="flex flex-col items-center z-10 relative pt-24 md:pt-28 pb-4 px-4 space-y-4 md:space-y-6">
+      <div className="flex flex-col items-center z-10 relative pt-24 md:pt-20 pb-4 md:pb-8 px-4 space-y-4 md:space-y-4 flex-1 md:overflow-auto">
         <img
           src="/logos/majority-logo-large.svg"
           alt="Majority"
@@ -255,7 +255,7 @@ export default function Homepage() {
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-3 pt-2">
+        <div className="flex items-center justify-center gap-3 pt-2 pb-8">
           <AvatarGroup>
             {["alex", "maria", "james", "sofia"].map((name) => (
               <Avatar key={name} className="ring-2 ring-secondary/50!">
@@ -272,7 +272,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <footer className="z-50 bg-transparent py-6 pb-20 md:py-4">
+      <footer className="z-50 bg-transparent py-6 pb-20 md:py-4 shrink-0">
         <div className="flex justify-center items-center text-sm text-gray-500 gap-6 md:gap-8">
           <Link
             to="/terms"
