@@ -211,7 +211,7 @@ export default function Homepage() {
       <Background />
       <div className="flex flex-col items-center z-10 relative pt-24 md:pt-16 pb-4 md:pb-4 px-4 space-y-4 md:space-y-3 flex-1 md:overflow-auto">
         <img
-          src="/logos/majority-logo-large.svg"
+          src="/logos/majority-logo-large.webp"
           alt="Majority"
           className="w-48 md:w-64 h-auto rounded-2xl"
         />
