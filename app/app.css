@@ -97,8 +97,40 @@
 
 @font-face {
   font-family: "Poppins";
+  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
   src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -141,4 +173,37 @@ body {
     transform: none;
     transition: opacity 1ms linear;
   }
+}
+
+/* Gradient text utility */
+.text-gradient-gold {
+  background: linear-gradient(
+    135deg,
+    var(--secondary-fade) 0%,
+    var(--secondary) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(
+    135deg,
+    var(--primary-fade) 0%,
+    var(--primary) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Deep navy text */
+.text-navy {
+  color: #001842;
+}
+
+/* Soft gray background */
+.bg-soft-gray {
+  background-color: #f8fafc;
 }

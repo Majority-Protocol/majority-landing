@@ -11,7 +11,6 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import { FooterContent } from "./components/FooterContent";
-import { cn } from "./utils";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -62,12 +61,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body
-        className={cn(
-          "min-h-screen flex flex-col",
-          footerType === "none" && "overflow-hidden overscroll-none",
-        )}
-      >
+      <body className="min-h-screen flex flex-col">
         <main className="flex-1">{children}</main>
         {footerType === "none" ? null : (
           <footer className="w-full bg-gradient-to-b from-sky-600 to-sky-950">

@@ -89,16 +89,16 @@ export const CreateQuestionTypeSelector = ({
 
   return (
     <div className="space-y-10">
-      <div className="bg-white rounded-full flex justify-evenly p-3 text-sky-950 shadow-[inset_0_4px_6px_0_rgba(1,26,68,0.08)]">
+      <div className="bg-white rounded-full flex justify-evenly p-2 md:p-3 text-[#001842] shadow-lg border border-gray-100">
         {Object.entries(SelectorData).map(([item]) => (
           <button
             type="button"
             key={item}
             onClick={() => handleItemClick(item as QuestionType)}
-            className={`px-1.5 lg:px-12 py-1.5 lg:py-4 cursor-pointer rounded-full text-xs lg:text-base transition-colors ${
+            className={`px-3 lg:px-12 py-2 lg:py-4 cursor-pointer rounded-full text-xs lg:text-base font-semibold transition-all duration-300 ${
               selectedItem === item
-                ? "bg-[#011A44] text-white"
-                : "bg-white hover:bg-sky-950/5"
+                ? "bg-linear-to-r from-primary-fade to-primary text-white shadow-md shadow-primary/25"
+                : "bg-white hover:bg-gray-50 text-[#001842]"
             }`}
           >
             {item}
@@ -113,11 +113,11 @@ export const CreateQuestionTypeSelector = ({
           loading="eager"
           fetchPriority="high"
           onLoad={() => setIsVisible(true)}
-          className={`filter transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${isVisible ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-95 blur-[2px]"}`}
+          className={`filter transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] drop-shadow-xl ${isVisible ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-95 blur-[2px]"}`}
         />
       </div>
       {selectorType === "creator" ? (
-        <p className="text-lg text-sky-950 text-center">
+        <p className="text-lg text-[#001842] text-center font-medium">
           {SelectorData[displayedItem as keyof typeof SelectorData].description}
         </p>
       ) : null}
