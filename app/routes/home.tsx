@@ -238,7 +238,7 @@ export default function Homepage() {
               <img
                 src={downloadIos}
                 alt="Download iOS app"
-                className="w-32 md:w-44"
+                className="w-36 md:w-44"
               />
             </Link>
             <Link
@@ -250,7 +250,7 @@ export default function Homepage() {
               <img
                 src={downloadAndroid}
                 alt="Download Android app"
-                className="w-36 md:w-48"
+                className="w-40 md:w-48"
               />
             </Link>
           </div>
