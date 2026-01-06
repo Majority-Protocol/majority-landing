@@ -5,6 +5,9 @@ export default function RulesPage() {
         <h1 className="text-3xl font-bold text-center">
           Majority Games Standard Contest Rules
         </h1>
+        <p>
+          <span className="font-bold">Last Updated:</span> 12/29/2025
+        </p>
       </header>
 
       <article className="space-y-10 leading-relaxed">
@@ -96,8 +99,20 @@ export default function RulesPage() {
           <h2 className="text-2xl font-semibold">2. Eligibility</h2>
           <p>
             The Contest is open to individual persons eighteen (18) or older,
-            who are not Restricted Persons (as defined in the Terms of Service),
-            and who meet the requirements set forth in the Terms of Service
+            who are not Restricted Persons (as defined in the{" "}
+            <a
+              href="/terms"
+              className="text-blue-600 underline hover:no-underline"
+            >
+              Terms of Service
+            </a>
+            ), and who meet the requirements set forth in the{" "}
+            <a
+              href="/terms"
+              className="text-blue-600 underline hover:no-underline"
+            >
+              Terms of Service
+            </a>{" "}
             (including any jurisdictional requirements for eligibility) and the
             Contest Details. Employees of Sponsor and its parent company,
             affiliates, subsidiaries, advertising, promotion, fulfillment or
@@ -169,10 +184,16 @@ export default function RulesPage() {
             </p>
           </div>
           <p>
-            Only one entry per person and/or Wallet (as defined in the Majority
-            Games Terms of Service) is permitted for each Contest. Entrants
-            submitting multiple entries or violating any of these Official Rules
-            may be disqualified.
+            Only one entry per person and/or Wallet (as defined in the{" "}
+            <a
+              href="/terms"
+              className="text-blue-600 underline hover:no-underline"
+            >
+              Majority Games Terms of Service
+            </a>
+            ) is permitted for each Contest. Entrants submitting multiple
+            entries or violating any of these Official Rules may be
+            disqualified.
           </p>
         </section>
 
@@ -310,18 +331,56 @@ export default function RulesPage() {
               electrical, network, computer, hardware, software program or
               transmission malfunctions, failures or difficulties.
             </p>
-            <p className="uppercase">
-              <span className="font-semibold">(b)</span> IN NO EVENT WILL
-              SPONSOR BE LIABLE TO YOU FOR ANY SPECIAL, INCIDENTAL, EXEMPLARY,
-              PUNITIVE OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF USE, DATA,
-              BUSINESS OR PROFITS) ARISING OUT OF OR IN CONNECTION WITH YOUR
-              PARTICIPATION IN THE CONTEST, WHETHER SUCH LIABILITY ARISES FROM
-              ANY CLAIM BASED UPON CONTRACT, WARRANTY, TORT (INCLUDING
-              NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, AND WHETHER OR NOT
-              SPONSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR
-              DAMAGE. Some jurisdictions do not allow the limitation or
-              exclusion of liability for incidental or consequential damages, so
-              the above limitation or exclusion may not apply to you.
+            <p>
+              <span className="font-semibold">(b)</span>{" "}
+              <span className="uppercase">
+                IN NO EVENT WILL SPONSOR BE LIABLE TO YOU FOR ANY SPECIAL,
+                INCIDENTAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES
+                (INCLUDING LOSS OF USE, DATA, BUSINESS OR PROFITS) ARISING OUT
+                OF OR IN CONNECTION WITH YOUR PARTICIPATION IN THE CONTEST,
+                WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON
+                CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), STRICT
+                LIABILITY OR OTHERWISE, AND WHETHER OR NOT SPONSOR HAS BEEN
+                ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE.
+              </span>{" "}
+              Some jurisdictions do not allow the limitation or exclusion of
+              liability for incidental or consequential damages, so the above
+              limitation or exclusion may not apply to you.
+            </p>
+            <p>
+              <span className="font-semibold">(c)</span> Without limiting
+              anything to the contrary in the{" "}
+              <a
+                href="/terms"
+                className="text-blue-600 underline hover:no-underline"
+              >
+                Majority Games Terms of Service
+              </a>
+              , you acknowledge and agree that your access and use of the
+              Majority Services and participation in Games may rely on
+              third-party providers, such as Alchemy, for certain
+              functionalities, including but not limited to processing gas fees,
+              transaction facilitation, or other blockchain-related operations.
+              You acknowledge and agree that Majority Games does not control
+              these third-party services and that their availability,
+              performance, or reliability is subject to factors beyond our
+              control, including downtime, outages, maintenance, or other
+              disruptions. Majority Games makes no representations, warranties,
+              or guarantees regarding the uninterrupted or error-free operation
+              of these third-party services. By participating in the Services or
+              any Games, you acknowledge the inherent risks associated with
+              reliance on third-party infrastructure, such as potential
+              inability to complete transactions, enter contests, or play due to
+              third-party failures. To the fullest extent permitted by
+              applicable law, you agree that Majority Games and its affiliates,
+              officers, directors, agents, investors, subsidiaries, and
+              employees shall have no liability for any claims, demands, or
+              damages (actual, consequential, incidental, or otherwise)
+              resulting from the unavailability, malfunction, or failure of any
+              third-party services, including those used for gas payments or
+              other essential operations, and you assume all risks related
+              thereto. This includes, without limitation, any delays, losses of
+              opportunity, or forfeitures in Games or transactions.
             </p>
           </div>
         </section>
@@ -391,7 +450,14 @@ export default function RulesPage() {
             without reference to rules governing choice of laws. Any action,
             suit or case arising out of, or in connection with, this Contest or
             these Official Rules will be subject to the Dispute Resolution
-            provision set forth in the Majority Games Terms of Service.
+            provision set forth in the{" "}
+            <a
+              href="/terms"
+              className="text-blue-600 underline hover:no-underline"
+            >
+              Majority Games Terms of Service
+            </a>
+            .
           </p>
         </section>
 
@@ -406,16 +472,8 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">13. Winner</h2>
-          <p>
-            A list of prize winners will be recorded via the functionality of
-            the Protocol and can be viewed therein.
-          </p>
-        </section>
-
-        <section className="space-y-4">
           <h2 className="text-2xl font-semibold">
-            14. Third-Party Services and Infrastructure
+            13. Third-Party Services and Infrastructure
           </h2>
           <h3 className="text-xl font-semibold">
             (a) Reliance on Third Parties
@@ -461,34 +519,19 @@ export default function RulesPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">
-            15. Game-Show Host - Entertainment-Only Disclaimer
-          </h2>
+          <h2 className="text-2xl font-semibold">14. Host Disclaimer</h2>
           <p>
-            The game-show hosts featured acts{" "}
-            <span className="font-semibold">
-              solely as an entertainer. Host statements are for entertainment
-              purposes only and should not be relied upon as factual, legal,
-              financial, or professional advice.
-            </span>
-            The host makes no warranties, express or implied, regarding the
-            truthfulness or accuracy of any remarks made during the program.
-          </p>
-          <p>
-            The host does not sponsor or endorse games, contests, or any related
-            activities presented. All gameplay, challenges, and prize
-            distributions are conducted independently of the host.
-          </p>
-          <p>
-            By watching or participating, you acknowledge that the host bears{" "}
-            <span className="font-semibold">no liability</span> for any aspect
-            of the contest—including technical glitches, loss of assets,
+            To the extent there is a host for a particular Contest, you
+            acknowledge and agree that any such host is there for entertainment
+            purposes only, and any views or statements made by the host do not
+            reflect Sponsor's views and should not be relied upon as factual,
+            legal, financial, or other advice. Sponsor does not endorse and
+            makes no warranties, express or implied, regarding the truthfulness
+            or accuracy of any such statements made by a host during the Game.
+            You acknowledge that the host and Sponsor bear no liability for any
+            aspect of the contest—including technical glitches, loss of assets,
             disputes between participants, or any other outcome arising from the
-            gameplay. All risks are assumed by the participants themselves.
-          </p>
-          <p>
-            This disclaimer applies to every episode, segment, and related
-            promotional material featuring hosts.
+            gameplay.
           </p>
         </section>
       </article>

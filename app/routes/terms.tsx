@@ -4,7 +4,7 @@ export default function TermsPage() {
       <header className="space-y-10">
         <h1 className="text-3xl font-bold text-center">Terms of Service</h1>
         <p>
-          <span className="font-bold">Last Updated:</span> 12/12/2025
+          <span className="font-bold">Last Updated:</span> 12/30/2025
         </p>
       </header>
 
@@ -277,8 +277,8 @@ export default function TermsPage() {
               offered, and you will automatically be disqualified if the Games
               may not be offered in your jurisdiction (which may include certain
               US-based states that prohibit the offering of contests structured
-              like the Games, including: Arizona, Arkansas, Connecticut,
-              Delaware, Illinois, Louisiana, Michigan, Idaho and Montana).
+              like the Games, including: Arizona, Connecticut, Hawaii, Idaho,
+              Iowa, Louisiana, Maine, Michigan, Montana, and Nevada).
               Participation in this Contest is void where prohibited or
               otherwise restricted by law. Each Participant is responsible for
               complying with all applicable local, state, and federal laws and
@@ -339,6 +339,33 @@ export default function TermsPage() {
               damages (actual or consequential) of any kind and nature, known
               and unknown, suspected and unsuspected, disclosed and undisclosed,
               arising out of or in any way connected with such dispute.
+            </p>
+            <p>
+              <span className="font-semibold">(f)</span> The Services, including
+              participation in Games, may rely on third-party providers, such as
+              Alchemy, for certain functionalities, including but not limited to
+              processing gas fees, transaction facilitation, or other
+              blockchain-related operations. You acknowledge and agree that
+              Majority Games does not control these third-party services and
+              that their availability, performance, or reliability is subject to
+              factors beyond our control, including downtime, outages,
+              maintenance, or other disruptions. Majority Games makes no
+              representations, warranties, or guarantees regarding the
+              uninterrupted or error-free operation of these third-party
+              services. By participating in the Services or any Games, you
+              acknowledge the inherent risks associated with reliance on
+              third-party infrastructure, such as potential inability to
+              complete transactions, enter contests, or play due to third-party
+              failures. To the fullest extent permitted by applicable law, you
+              agree that Majority Games and its affiliates, officers, directors,
+              agents, investors, subsidiaries, and employees shall have no
+              liability for any claims, demands, or damages (actual,
+              consequential, incidental, or otherwise) resulting from the
+              unavailability, malfunction, or failure of any third-party
+              services, including those used for gas payments or other essential
+              operations, and you assume all risks related thereto. This
+              includes, without limitation, any delays, losses of opportunity,
+              or forfeitures in Games or transactions.
             </p>
           </div>
         </section>
@@ -971,54 +998,7 @@ export default function TermsPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">
-            21. Third-Party Services and Infrastructure
-          </h2>
-          <h3 className="text-xl font-semibold">
-            (a) Reliance on Third Parties
-          </h3>
-          <p>
-            The Services, including participation in Games, may rely on
-            third-party providers, such as Alchemy, for certain functionalities,
-            including but not limited to processing gas fees, transaction
-            facilitation, or other blockchain-related operations. You
-            acknowledge and agree that Majority Games does not control these
-            third-party services and that their availability, performance, or
-            reliability is subject to factors beyond our control, including
-            downtime, outages, maintenance, or other disruptions. Majority Games
-            makes no representations, warranties, or guarantees regarding the
-            uninterrupted or error-free operation of these third-party services.
-          </p>
-          <h3 className="text-xl font-semibold">
-            (b) User Responsibility and Risks
-          </h3>
-          <p>
-            It is your sole responsibility to ensure that you can access and use
-            the Services, including any required third-party integrations, in
-            compliance with applicable laws and without interruption. By
-            participating in the Services or any Games, you acknowledge the
-            inherent risks associated with reliance on third-party
-            infrastructure, such as potential inability to complete
-            transactions, enter contests, or play due to third-party failures.
-            You agree that Majority Games shall not be liable for any losses,
-            damages, or inability to participate arising from such third-party
-            issues, and you assume all risks related thereto.
-          </p>
-          <h3 className="text-xl font-semibold">(c) No Liability</h3>
-          <p>
-            To the fullest extent permitted by law, Majority Games and its
-            affiliates, officers, directors, agents, investors, subsidiaries,
-            and employees shall have no liability for any claims, demands, or
-            damages (actual, consequential, incidental, or otherwise) resulting
-            from the unavailability, malfunction, or failure of any third-party
-            services, including those used for gas payments or other essential
-            operations. This includes, without limitation, any delays, losses of
-            opportunity, or forfeitures in Games or transactions.
-          </p>
-        </section>
-
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">22. Contact Information</h2>
+          <h2 className="text-2xl font-semibold">21. Contact Information</h2>
           <p>
             If you have any questions about these Terms or the Services, please
             contact Majority Games at{" "}
