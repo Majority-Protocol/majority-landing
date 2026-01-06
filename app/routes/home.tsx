@@ -169,7 +169,7 @@ const Youtube = ({ className }: { className?: string }) => (
 
 export default function Homepage() {
   return (
-    <div className="relative min-h-screen bg-white overflow-y-auto">
+    <div className="relative min-h-screen bg-white overflow-y-auto flex flex-col">
       <div className="fixed top-0 z-50 w-full bg-transparent">
         <div className="px-4 md:px-8 max-w-7xl mx-auto">
           <header className="flex h-(--header-height) items-center gap-2">
@@ -209,24 +209,25 @@ export default function Homepage() {
         </div>
       </div>
       <Background />
-      <div className="flex flex-col items-center justify-center z-10 relative pt-24 pb-8 px-4 space-y-6 md:space-y-10">
+      <div className="flex-1 flex flex-col items-center justify-center z-10 relative pt-20 md:pt-24 pb-4 px-4 space-y-4 md:space-y-6">
         <img
           src="/logos/majority-logo-large.png"
           alt="Majority"
-          className="w-36 md:w-64 h-auto drop-shadow-lg rounded-2xl"
+          className="w-36 md:w-64 h-auto rounded-2xl"
         />
-        <div className="flex flex-col items-center text-center space-y-2">
+        <div className="h-1 md:h-2"></div>
+        <div className="flex flex-col items-center text-center space-y-2 overflow-visible">
           <h1 className="font-black text-3xl md:text-6xl lg:text-7xl text-[#001842] tracking-tight">
             Think like the crowd.
           </h1>
-          <h1 className="font-black text-3xl md:text-6xl lg:text-7xl text-gradient-gold tracking-tight">
+          <h1 className="font-black text-3xl md:text-6xl lg:text-7xl text-gradient-gold tracking-tight leading-tight pb-1">
             Win big.
           </h1>
         </div>
         <p className="text-gray-600 max-w-2xl text-center text-pretty text-sm md:text-xl font-medium">
           Mobile game shows — Win cash by thinking like the crowd.{" "}
         </p>
-        <div className="flex flex-col items-center gap-6 pt-4">
+        <div className="flex flex-col items-center gap-4 pt-2">
           <div className="flex items-center gap-4">
             <Link
               to={IOS_URL}
@@ -254,7 +255,7 @@ export default function Homepage() {
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-3 pt-4">
+        <div className="flex items-center justify-center gap-3 pt-2">
           <AvatarGroup>
             {["alex", "maria", "james", "sofia"].map((name) => (
               <Avatar key={name} className="ring-2 ring-secondary/50!">
@@ -271,7 +272,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <footer className="z-50 bg-transparent py-6">
+      <footer className="z-50 bg-transparent py-6 pb-12 md:py-4">
         <div className="flex justify-center items-center text-sm text-gray-500 gap-6 md:gap-8">
           <Link
             to="/terms"
