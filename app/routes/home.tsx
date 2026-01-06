@@ -169,7 +169,7 @@ const Youtube = ({ className }: { className?: string }) => (
 
 export default function Homepage() {
   return (
-    <div className="relative bg-white flex flex-col h-screen overflow-hidden">
+    <div className="relative bg-white flex flex-col md:h-screen md:overflow-hidden">
       <div className="fixed top-0 z-50 w-full bg-transparent">
         <div className="px-4 md:px-8 max-w-7xl mx-auto">
           <header className="flex h-(--header-height) items-center gap-2">
