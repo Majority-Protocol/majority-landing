@@ -11,7 +11,7 @@ export function LandingPage() {
     >
       <section
         id="hero"
-        className="bg-linear-223 from-sky-600 to-blue-700 text-white md:rounded-3xl md:px-20"
+        className="bg-[#ff9211] text-white md:rounded-3xl md:px-20"
       >
         <div className="mx-auto px-4 pt-16">
           <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -27,9 +27,8 @@ export function LandingPage() {
                   <h1 className="text-4xl lg:text-6xl font-semibold mb-6">
                     Engage and reward your audience
                   </h1>
-                  <p className="text-xl mb-8 text-blue-100">
-                    Crowdsource and distribute prizes in shows without
-                    intermediaries
+                  <p className="text-xl mb-8 text-white">
+                    Crowdsource and distribute prizes without intermediaries
                   </p>
                   <div className="flex justify-center md:justify-start gap-4">
                     <a href={IOS_URL} target="_blank" rel="noopener noreferrer">
