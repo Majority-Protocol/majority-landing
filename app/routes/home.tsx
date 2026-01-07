@@ -169,7 +169,7 @@ const Youtube = ({ className }: { className?: string }) => (
 
 export default function Homepage() {
   return (
-    <div className="relative bg-white flex flex-col md:h-screen md:overflow-hidden">
+    <div className="relative bg-white flex flex-col min-h-screen md:h-screen md:overflow-hidden">
       <div className="fixed top-0 z-50 w-full bg-transparent">
         <div className="px-4 md:px-8 max-w-7xl mx-auto">
           <header className="flex h-(--header-height) items-center gap-2">
@@ -209,13 +209,13 @@ export default function Homepage() {
         </div>
       </div>
       <Background />
-      <div className="flex flex-col items-center z-10 relative pt-20 md:pt-16 pb-4 px-4 space-y-3 flex-1">
+      <div className="flex flex-col items-center z-10 relative pt-28 md:pt-24 pb-4 px-4 space-y-3 flex-1">
         <img
           src="/logos/majority-logo-large.webp"
           alt="Majority"
-          className="w-48 md:w-64 h-auto rounded-2xl"
+          className="w-40 md:w-52 h-auto rounded-2xl"
         />
-        <div className="h-4 md:h-6"></div>
+        <div className="h-2 md:h-3"></div>
         <div className="flex flex-col items-center text-center space-y-2 overflow-visible">
           <h1 className="font-black text-3xl md:text-6xl lg:text-7xl text-[#001842] tracking-tight">
             Think like the crowd.
@@ -225,7 +225,7 @@ export default function Homepage() {
           </h1>
         </div>
         <p className="text-gray-600 max-w-2xl text-center text-pretty text-sm md:text-xl font-medium pt-2">
-          Mobile game shows — Win cash by thinking like the crowd.{" "}
+          Mobile game shows — win cash by thinking like the crowd.{" "}
         </p>
         <div className="flex flex-col items-center gap-4 pt-4">
           <div className="flex items-center gap-4">
@@ -255,14 +255,11 @@ export default function Homepage() {
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-3 pt-6 pb-8">
+        <div className="flex items-center justify-center gap-3 pt-6 md:pt-10 pb-4 md:pb-8">
           <AvatarGroup>
             {["alex", "maria", "james", "sofia"].map((name) => (
               <Avatar key={name} className="ring-2 ring-secondary/50!">
-                <AvatarImage
-                  avatar={`https://i.pravatar.cc/150?u=${name}`}
-                  address={name}
-                />
+                <AvatarImage avatar={`/avatars/${name}.jpg`} address={name} />
               </Avatar>
             ))}
           </AvatarGroup>
@@ -272,7 +269,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <footer className="z-50 bg-transparent py-6 pb-20 md:py-4 shrink-0">
+      <footer className="z-50 bg-transparent py-4 pb-8 md:py-4 shrink-0">
         <div className="flex justify-center items-center text-sm text-gray-500 gap-6 md:gap-8">
           <Link
             to="/terms"
