@@ -209,13 +209,13 @@ export default function Homepage() {
         </div>
       </div>
       <Background />
-      <div className="flex flex-col items-center z-10 relative pt-24 md:pt-20 pb-4 px-4 space-y-3 flex-1">
+      <div className="flex flex-col items-center z-10 relative pt-28 md:pt-24 pb-4 px-4 space-y-3 flex-1">
         <img
           src="/logos/majority-logo-large.webp"
           alt="Majority"
-          className="w-48 md:w-64 h-auto rounded-2xl"
+          className="w-40 md:w-52 h-auto rounded-2xl"
         />
-        <div className="h-4 md:h-6"></div>
+        <div className="h-2 md:h-3"></div>
         <div className="flex flex-col items-center text-center space-y-2 overflow-visible">
           <h1 className="font-black text-3xl md:text-6xl lg:text-7xl text-[#001842] tracking-tight">
             Think like the crowd.
@@ -225,7 +225,7 @@ export default function Homepage() {
           </h1>
         </div>
         <p className="text-gray-600 max-w-2xl text-center text-pretty text-sm md:text-xl font-medium pt-2">
-          Mobile game shows — Win cash by thinking like the crowd.{" "}
+          Mobile game shows — win cash by thinking like the crowd.{" "}
         </p>
         <div className="flex flex-col items-center gap-4 pt-4">
           <div className="flex items-center gap-4">
