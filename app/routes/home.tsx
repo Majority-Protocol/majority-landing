@@ -169,7 +169,7 @@ const Youtube = ({ className }: { className?: string }) => (
 
 export default function Homepage() {
   return (
-    <div className="relative bg-white flex flex-col h-screen overflow-hidden">
+    <div className="relative bg-white flex flex-col min-h-screen md:h-screen md:overflow-hidden">
       <div className="fixed top-0 z-50 w-full bg-transparent">
         <div className="px-4 md:px-8 max-w-7xl mx-auto">
           <header className="flex h-(--header-height) items-center gap-2">
@@ -255,14 +255,11 @@ export default function Homepage() {
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-3 pt-10 pb-8">
+        <div className="flex items-center justify-center gap-3 pt-6 md:pt-10 pb-4 md:pb-8">
           <AvatarGroup>
             {["alex", "maria", "james", "sofia"].map((name) => (
               <Avatar key={name} className="ring-2 ring-secondary/50!">
-                <AvatarImage
-                  avatar={`https://i.pravatar.cc/150?u=${name}`}
-                  address={name}
-                />
+                <AvatarImage avatar={`/avatars/${name}.jpg`} address={name} />
               </Avatar>
             ))}
           </AvatarGroup>
@@ -272,7 +269,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <footer className="z-50 bg-transparent py-6 pb-20 md:py-4 shrink-0">
+      <footer className="z-50 bg-transparent py-4 pb-8 md:py-4 shrink-0">
         <div className="flex justify-center items-center text-sm text-gray-500 gap-6 md:gap-8">
           <Link
             to="/terms"
