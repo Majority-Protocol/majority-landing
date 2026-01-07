@@ -209,7 +209,7 @@ export default function Homepage() {
         </div>
       </div>
       <Background />
-      <div className="flex flex-col items-center z-10 relative pt-20 md:pt-16 pb-4 px-4 space-y-3 flex-1">
+      <div className="flex flex-col items-center z-10 relative pt-24 md:pt-20 pb-4 px-4 space-y-3 flex-1">
         <img
           src="/logos/majority-logo-large.webp"
           alt="Majority"
@@ -255,7 +255,7 @@ export default function Homepage() {
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-3 pt-6 pb-8">
+        <div className="flex items-center justify-center gap-3 pt-10 pb-8">
           <AvatarGroup>
             {["alex", "maria", "james", "sofia"].map((name) => (
               <Avatar key={name} className="ring-2 ring-secondary/50!">
