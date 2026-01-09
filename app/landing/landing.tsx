@@ -11,7 +11,7 @@ export function LandingPage() {
     >
       <section
         id="hero"
-        className="bg-[#ff9211] text-white md:rounded-3xl md:px-20"
+        className="bg-[linear-gradient(to_right,#085ebe_33%,#157fd0_100%)] text-white md:rounded-3xl md:px-20"
       >
         <div className="mx-auto px-4 pt-16">
           <div className="flex flex-col lg:flex-row items-center justify-between">
