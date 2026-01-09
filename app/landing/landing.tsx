@@ -11,9 +11,25 @@ export function LandingPage() {
     >
       <section
         id="hero"
-        className="bg-[#ff9211] text-white md:rounded-3xl md:px-20"
+        className="bg-[linear-gradient(to_right,#085ebe_33%,#157fd0_100%)] text-white md:rounded-3xl md:px-20 relative overflow-hidden"
       >
-        <div className="mx-auto px-4 pt-16">
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, white 0.1px, transparent 0.1px), linear-gradient(to bottom, white 0.1px, transparent 0.1px)",
+            backgroundSize: "1.5px 1.5px",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, rgba(48, 140, 214, 0.2) 1.5px, transparent 1.5px)",
+            backgroundSize: "6px 6px",
+          }}
+        />
+        <div className="mx-auto px-4 pt-16 relative">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="flex flex-col gap-20">
               <img
